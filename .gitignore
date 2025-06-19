@@ -2,9 +2,9 @@
 .DS_Store
 
 # VS Code settings
-# Keep settings.json to share workspace settings, ignore others
+# Keep settings.json and extensions.json to share workspace settings, ignore others
 /.vscode/*.code-workspace
-/.vscode/extensions.json
+#/.vscode/extensions.json
 /.vscode/launch.json
 /.vscode/tasks.json
 /.vscode/settings.json.bak # Backup settings files

@@ -1,0 +1,9 @@
+// email-project-template/.vscode/extensions.json
+{
+  "recommendations": [
+    "mjmlio.vscode-mjml", // MJML (unofficial fork) by Daniel Knights
+    "esbenp.prettier-vscode", // Often used for code formatting alongside "editor.formatOnSave"
+    "dbaeumer.vscode-eslint", // If you decide to add linting for JS/HTML later
+    "eamodio.gitlens" // GitLens, which you are using
+  ]
+}
