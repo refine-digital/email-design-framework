@@ -3,7 +3,7 @@
 This repository provides a robust and standardized template for building HTML email signatures and other responsive email assets using the MJML framework, integrated with VS Code and Git best practices.
 
 ## Project Structure Overview
-
+```
 src/
 ├── components/
 │   ├── body/
@@ -37,6 +37,7 @@ src/
 ├── images/
 │   └── external.json
 └── index.mjml
+```
 
 ### `src/` Directory Breakdown:
 
