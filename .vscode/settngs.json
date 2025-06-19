@@ -15,5 +15,5 @@
     "editor.linkedEditing": true,                   // Enables linked editing of HTML/MJML tag pairs, a useful feature of the fork
 
     // Git specific setting
-    "git.enableCommitSigning": true                 // Enables GPG commit signing if you have it set up
+    // "git.enableCommitSigning": true                 // Enables GPG commit signing if you have it set up
 }
