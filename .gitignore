@@ -1,0 +1,42 @@
+# macOS system files
+.DS_Store
+
+# VS Code settings
+# Keep settings.json to share workspace settings, ignore others
+/.vscode/*.code-workspace
+/.vscode/extensions.json
+/.vscode/launch.json
+/.vscode/tasks.json
+/.vscode/settings.json.bak # Backup settings files
+
+# Node modules
+node_modules/
+/yarn.lock # if using yarn alongside npm, and npm is primary
+/package-lock.json # if using yarn alongside npm, and yarn is primary
+
+# Build output
+/dist/
+/build/
+
+# Temporary files
+*.tmp
+*.log
+temp_*.mjml
+
+# Secrets
+.env
+.env.local
+.env.*.local # For .env.development.local, .env.test.local, etc.
+
+# npm debug logs
+npm-debug.log*
+
+# Yarn debug logs
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.pnpm-store/
+
+# Misc
+.cache/
+.eslintcache

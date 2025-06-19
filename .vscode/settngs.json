@@ -1,0 +1,19 @@
+  {
+    // General VS Code settings
+    "editor.formatOnSave": true,       // Ensures your code is formatted when you save the file
+    "editor.tabSize": 2,               // Sets the tab size to 2 spaces for consistent indentation
+    "files.autoSave": "onFocusChange", // Automatically saves files when you switch away from them
+
+    // MJML Extension specific settings for Daniel Knights' fork
+    "[mjml]": {
+      "editor.defaultFormatter": "mjmlio.vscode-mjml" // Sets the default formatter for MJML files
+    },
+
+    "mjml.autoPreview": true,                       // Automatically opens the MJML preview when an MJML file is opened
+    "mjml.switchOnSeparateFileChange": false,       // Keeps the preview focused on the main MJML file even when editing includes/partials
+    "mjml.snippetsInsideComments": false,           // Prevents snippets and completion items inside comments, as per the fork's details
+    "editor.linkedEditing": true,                   // Enables linked editing of HTML/MJML tag pairs, a useful feature of the fork
+
+    // Git specific setting
+    "git.enableCommitSigning": true                 // Enables GPG commit signing if you have it set up
+}
