@@ -1,30 +1,35 @@
+<!-- File:_head.mjml -->
+<!-- <mj-title> Defines the title of the email, usually shown in the browser tab or email client window title -->
 <mj-title>
   Email Template Title
 </mj-title>
+
+<!-- <mj-preview> This text appears in email client inbox previews, often after the subject line -->
 <mj-preview>
-  <!-- This text appears in email client inbox previews, often after the subject line -->
   Email template preview text.
 </mj-preview>
+
 <mj-font />
+
 <mj-attributes>
   <!-- Structural Elements -->
-  <mj-all
-    font-family="Ubuntu, Helvetica, Arial, sans-serif"
-    color="#000000"
-  />
+  <!-- <mj-body> The main container for all visible content of the email -->
   <mj-body
     width="600px"
   />
+  <!-- <mj-column> Organizes content vertically within a section, stacks on mobile -->
   <mj-column
     border="none"
     width="100%"
     vertical-align="top"
   />
+  <!-- <mj-group> Groups columns together to prevent them from stacking on mobile -->
   <mj-group
     vertical-align="top"
     width="100%"
     direction="ltr"
   />
+  <!-- <mj-section> Defines horizontal blocks (rows) in the email -->
   <mj-section
     background-position="top center"
     background-position-x="none"
@@ -36,10 +41,12 @@
     padding="20px 0"
     text-align="center"
   />
+  <!-- <mj-spacer> Creates a blank vertical space -->
   <mj-spacer
     height="20px"
     padding="0"
   />
+  <!-- <mj-wrapper> Wraps multiple sections for shared styling or layout -->
   <mj-wrapper
     background-position="top center"
     background-position-x="none"
@@ -53,7 +60,14 @@
     text-align="center"
   />
 
-  <!-- Basic Content Elements -->
+  <!-- Basic  Elements -->
+  <!-- <mj-all> Applies attributes to all MJML components within the email -->
+  <mj-all
+    font-family="Ubuntu, Helvetica, Arial, sans-serif"
+    color="#000000"
+  />
+
+  <!-- <mj-button> Renders a clickable button -->
   <mj-button
     align="center"
     background-color="#414141"
@@ -72,14 +86,8 @@
     text-transform="none"
     vertical-align="middle"
   />
-  <mj-hero
-    vertical-align="top"
-  />
-  <!--  <mj-heor> attributes incorrect docs
-    direction="ltr"
-    width="100%"
-  -->
 
+  <!-- <mj-image> Inserts an image into the email -->
   <mj-image
     align="center"
     alt=""
@@ -92,6 +100,7 @@
     padding="10px 25px"
     target="_blank"
   />
+  <!-- <mj-table> Creates a basic table structure for tabular data -->
   <mj-table
     align="left"
     border="none"
@@ -103,6 +112,7 @@
     table-layout="auto"
     width="100%"
   />
+  <!-- <mj-text> Renders a block of text content -->
   <mj-text
     align="left"
     color="#000000"
@@ -112,10 +122,11 @@
     padding="10px 25px"
   />
   <!--  <mj-text> attributes incorrect docs
-    letter-spacing="none"
+    letter-spacing="0px"
   -->
 
   <!-- Compound Elements -->
+  <!-- <mj-accordion> Creates an interactive accordion (collapsible content) -->
   <mj-accordion
     border="2px solid black"
     font-family="Ubuntu, Helvetica, Arial, sans-serif"
@@ -129,6 +140,7 @@
     icon-wrapped-url="https://i.imgur.com/bIXv1bk.png"
     padding="10px 25px"
   />
+  <!-- <mj-accordion-element> Defines an individual item within an accordion -->
   <mj-accordion-element
     border="none"
     font-family="Ubuntu, Helvetica, Arial, sans-serif"
@@ -141,6 +153,7 @@
     icon-wrapped-alt="-"
     icon-wrapped-url="https://i.imgur.com/bIXv1bk.png"
   />
+  <!-- <mj-accordion-text> Content of an accordion item -->
   <mj-accordion-text
     font-family="Ubuntu, Helvetica, Arial, sans-serif"
     font-size="13px"
@@ -148,11 +161,13 @@
     line-height="1"
     padding="16px"
   />
+  <!-- <mj-accordion-title> Title of an accordion item, which is clickable -->
   <mj-accordion-title
     font-family="Ubuntu, Helvetica, Arial, sans-serif"
     font-size="13px"
     padding="16px"
   />
+  <!-- <mj-carousel> Displays a clickable image carousel -->
   <mj-carousel
     align="center"
     icon-width="44px"
@@ -168,11 +183,13 @@
     tb-selected-border-color="none"
     tb-width="null"
   -->
+  <!-- <mj-carousel-image> Individual image within a carousel -->
   <mj-carousel-image
     alt=""
     target="_blank"
     thumbnails-src="null"
   />
+  <!-- <mj-navbar> Creates a responsive navigation bar -->
   <mj-navbar
     align="center"
     ico-align="center"
@@ -188,6 +205,7 @@
     ico-padding-right="10px"
     ico-padding-top="10px"
   />
+  <!-- <mj-navbar-link> Individual link within a navigation bar -->
   <mj-navbar-link
     color="#000000"
     font-family="Ubuntu, Helvetica, Arial, sans-serif"
@@ -196,6 +214,7 @@
     padding="15px 10px"
     text-transform="uppercase"
   />
+  <!-- <mj-social> Displays a row of social media icons -->
   <mj-social
     align="center"
     border-radius="3px"
@@ -216,7 +235,7 @@
   <!--  <mj-social> attributes incorrect docs
     target="_blank"
   -->
-
+  <!-- <mj-social-element> Individual social media icon/link within a social group -->
   <mj-social-element
     align="center"
     alt=""
@@ -240,17 +259,23 @@
   -->
 
   <!-- Special Elements -->
+  <!-- <mj-all> Applies default styles to all MJML components -->
   <mj-all
     font-family="Ubuntu, Helvetica, Arial, sans-serif"
     color="#000000"
   />
+
+  <!-- <mj-class> Defines reusable classes for applying attribute sets to components -->
   <mj-class />
 </mj-attributes>
+
+<!-- <mj-html-attributes> Allows injecting custom HTML attributes into the final HTML document's root elements -->
 <mj-html-attributes />
+
+<!-- <mj-breakpoint> Defines the breakpoint width for responsive behavior in media queries -->
 <mj-breakpoint />
+
+<!-- <mj-style> Contains CSS rules that are either inlined or kept in the HTML head by the MJML compiler -->
 <mj-style>
   /* Global styles can go here */
 </mj-style>
-<mj-raw>
-  <!-- Any raw HTML for the head can go here -->
-</mj-raw>
