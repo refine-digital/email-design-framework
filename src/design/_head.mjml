@@ -8,31 +8,242 @@
 <mj-font />
 <mj-attributes>
   <!-- Structural Elements -->
-  <mj-all />
-  <mj-column />
-  <mj-group />
-  <mj-section />
-  <mj-spacer />
-  <mj-wrapper />
+  <mj-all
+    font-family="Ubuntu, Helvetica, Arial, sans-serif"
+    color="#000000"
+  />
+  <mj-body
+    width="600px"
+  />
+  <mj-column
+    border="none"
+    width="100%"
+    vertical-align="top"
+  />
+  <mj-group
+    vertical-align="top"
+    width="100%"
+    direction="ltr"
+  />
+  <mj-section
+    background-position="top center"
+    background-position-x="none"
+    background-position-y="none"
+    background-repeat="repeat"
+    background-size="auto"
+    border="none"
+    direction="ltr"
+    padding="20px 0"
+    text-align="center"
+  />
+  <mj-spacer
+    height="20px"
+    padding="0"
+  />
+  <mj-wrapper
+    background-position="top center"
+    background-position-x="none"
+    background-position-y="none"
+    background-repeat="repeat"
+    background-size="auto"
+    border="none"
+    border-radius="0"
+    padding="20px 0"
+    full-width="false"
+    text-align="center"
+  />
 
   <!-- Basic Content Elements -->
-  <mj-button />
-  <mj-carousel-image />
-  <mj-image />
-  <mj-raw /> <!-- Raw content, minimal attributes usually -->
-  <mj-social />
-  <mj-social-element />
-  <mj-table />
-  <mj-text />
+  <mj-button
+    align="center"
+    background-color="#414141"
+    border="none"
+    border-radius="3px"
+    color="#ffffff"
+    font-family="Ubuntu, Helvetica, Arial, sans-serif"
+    font-size="13px"
+    font-weight="normal"
+    inner-padding="10px 25px"
+    line-height="120%"
+    padding="10px 25px"
+    target="_blank"
+    text-align="center"
+    text-decoration="none"
+    text-transform="none"
+    vertical-align="middle"
+  />
+  <mj-hero
+    vertical-align="top"
+  />
+  <!--  <mj-heor> attributes incorrect docs
+    direction="ltr"
+    width="100%"
+  -->
+
+  <mj-image
+    align="center"
+    alt=""
+    border="none"
+    border-bottom="none"
+    border-left="none"
+    border-right="none"
+    border-top="none"
+    height="auto"
+    padding="10px 25px"
+    target="_blank"
+  />
+  <mj-table
+    align="left"
+    border="none"
+    color="#000000"
+    font-family="Ubuntu, Helvetica, Arial, sans-serif"
+    font-size="13px"
+    line-height="22px"
+    padding="10px 25px"
+    table-layout="auto"
+    width="100%"
+  />
+  <mj-text
+    align="left"
+    color="#000000"
+    font-family="Ubuntu, Helvetica, Arial, sans-serif"
+    font-size="13px"
+    line-height="1"
+    padding="10px 25px"
+  />
+  <!--  <mj-text> attributes incorrect docs
+    letter-spacing="none"
+  -->
 
   <!-- Compound Elements -->
-  <mj-accordion />
-  <mj-accordion-element />
-  <mj-accordion-text />
-  <mj-accordion-title />
-  <mj-navbar />
-  <mj-navbar-link />
+  <mj-accordion
+    border="2px solid black"
+    font-family="Ubuntu, Helvetica, Arial, sans-serif"
+    icon-align="middle"
+    icon-height="32px"
+    icon-position="right"
+    icon-unwrapped-alt="-"
+    icon-unwrapped-url="https://i.imgur.com/w4uTygT.png"
+    icon-width="32px"
+    icon-wrapped-alt="-"
+    icon-wrapped-url="https://i.imgur.com/bIXv1bk.png"
+    padding="10px 25px"
+  />
+  <mj-accordion-element
+    border="none"
+    font-family="Ubuntu, Helvetica, Arial, sans-serif"
+    icon-align="middle"
+    icon-height="32px"
+    icon-position="right"
+    icon-unwrapped-alt="-"
+    icon-unwrapped-url="https://i.imgur.com/w4uTygT.png"
+    icon-width="32px"
+    icon-wrapped-alt="-"
+    icon-wrapped-url="https://i.imgur.com/bIXv1bk.png"
+  />
+  <mj-accordion-text
+    font-family="Ubuntu, Helvetica, Arial, sans-serif"
+    font-size="13px"
+    letter-spacing="0px"
+    line-height="1"
+    padding="16px"
+  />
+  <mj-accordion-title
+    font-family="Ubuntu, Helvetica, Arial, sans-serif"
+    font-size="13px"
+    padding="16px"
+  />
+  <mj-carousel
+    align="center"
+    icon-width="44px"
+    left-icon="https://i.imgur.com/xTh3dqWU.png"
+    right-icon="https://i.imgur.com/dR0H0DPU.png"
+    tb-border="none"
+    thumbnails="hidden"
+  />
+  <!--  <mj-carousel> attributes incorrect docs
+    container-background-color="none"
+    tb-border-radius="none"
+    tb-hover-border-color="none"
+    tb-selected-border-color="none"
+    tb-width="null"
+  -->
+  <mj-carousel-image
+    alt=""
+    target="_blank"
+    thumbnails-src="null"
+  />
+  <mj-navbar
+    align="center"
+    ico-align="center"
+    ico-close="8855"
+    ico-color="#000000"
+    ico-font-family="Ubuntu, Helvetica, Arial, sans-serif"
+    ico-font-size="30px"
+    ico-line-height="30px"
+    ico-open="9776"
+    ico-padding="10px"
+    ico-padding-bottom="10px"
+    ico-padding-left="10px"
+    ico-padding-right="10px"
+    ico-padding-top="10px"
+  />
+  <mj-navbar-link
+    color="#000000"
+    font-family="Ubuntu, Helvetica, Arial, sans-serif"
+    font-size="13px"
+    line-height="22px"
+    padding="15px 10px"
+    text-transform="uppercase"
+  />
+  <mj-social
+    align="center"
+    border-radius="3px"
+    color="#333333"
+    font-family="Ubuntu, Helvetica, Arial, sans-serif"
+    font-size="13px"
+    font-style="normal"
+    font-weight="normal"
+    icon-size="20px"
+    inner-padding="4px"
+    line-height="22px"
+    mode="horizontal"
+    padding="10px 25px"
+    icon-padding="0px"
+    text-padding="4px 4px 4px 0"
+    text-decoration="none"
+  />
+  <!--  <mj-social> attributes incorrect docs
+    target="_blank"
+  -->
 
+  <mj-social-element
+    align="center"
+    alt=""
+    border-radius="3px"
+    color="#333333"
+    font-family="Ubuntu, Helvetica, Arial, sans-serif"
+    font-size="13px"
+    font-style="normal"
+    font-weight="normal"
+    icon-size="20px"
+    icon-padding="0px"
+    line-height="22px"
+    padding="4px"
+    src=""
+    target="_blank"
+    text-padding="4px 4px 4px 0"
+    vertical-align="middle"
+  />
+  <!--  <mj-social-element> attributes incorrect docs
+    icon-position="right"
+  -->
+
+  <!-- Special Elements -->
+  <mj-all
+    font-family="Ubuntu, Helvetica, Arial, sans-serif"
+    color="#000000"
+  />
   <mj-class />
 </mj-attributes>
 <mj-html-attributes />
