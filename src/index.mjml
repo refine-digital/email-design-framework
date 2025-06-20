@@ -4,60 +4,15 @@
   </mj-head>
   <mj-body>
     <!-- Pre-header Section -->
-    <mj-section>
-      <mj-column>
-        <mj-raw>
-          <!-- Pre-header text that shows in inbox preview -->
-          <span>
-            Email Template Preview.
-          </span>
-        </mj-raw>
-      </mj-column>
-    </mj-section>
+    <mj-include path="./components/pre/_pre.mjml" />
 
     <!-- Header Section -->
-    <mj-section>
-      <mj-column>
-        <mj-image />
-      </mj-column>
-    </mj-section>
+    <mj-include path="./components/header/_header.mjml" />
 
     <!-- Main Body Section (for Content) -->
-    <mj-section>
-      <mj-column>
-        <mj-text>
-          Your Name
-        </mj-text>
-        <mj-text>
-          Your Title
-        </mj-text>
-        <mj-text>
-          Phone: (123) 456-7890
-        </mj-text>
-        <mj-text>
-          Email: your.email@example.com
-        </mj-text>
-        <mj-social>
-          <mj-social-element name="facebook" />
-          <mj-social-element name="linkedin" />
-          <mj-social-element name="instagram" />
-        </mj-social>
-        <mj-text>
-          YourWebsite.com
-        </mj-text>
-      </mj-column>
-    </mj-section>
+    <mj-include path="./components/body/_body.mjml" />
 
     <!-- Footer Section -->
-    <mj-section>
-      <mj-column>
-        <mj-text>
-          This email is confidential.
-        </mj-text>
-        <mj-text>
-          [Your Company Address]
-        </mj-text>
-      </mj-column>
-    </mj-section>
+    <mj-include path="./components/footer/_footer.mjml" />
   </mj-body>
 </mjml>

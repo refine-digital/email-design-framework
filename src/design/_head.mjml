@@ -1,32 +1,42 @@
+<mj-title>
+  Email Template Title
+</mj-title>
+<mj-preview>
+  <!-- This text appears in email client inbox previews, often after the subject line -->
+  Email template preview text.
+</mj-preview>
+<mj-font />
 <mj-attributes>
+  <!-- Structural Elements -->
   <mj-all />
-  <mj-text />
-  <mj-button />
-  <mj-image />
-  <mj-section />
   <mj-column />
-  <mj-social />
-  <mj-accordion />
-  <mj-divider />
   <mj-group />
-  <mj-hero />
-  <mj-navbar />
-  <mj-table />
+  <mj-section />
   <mj-spacer />
   <mj-wrapper />
-  <mj-class />
-  <mj-html-attributes />
-  <mj-preview />
-  <mj-title />
+
+  <!-- Basic Content Elements -->
+  <mj-button />
   <mj-carousel-image />
+  <mj-image />
+  <mj-raw /> <!-- Raw content, minimal attributes usually -->
+  <mj-social />
   <mj-social-element />
+  <mj-table />
+  <mj-text />
+
+  <!-- Compound Elements -->
+  <mj-accordion />
   <mj-accordion-element />
-  <mj-accordion-title />
   <mj-accordion-text />
+  <mj-accordion-title />
+  <mj-navbar />
   <mj-navbar-link />
+
+  <mj-class />
 </mj-attributes>
+<mj-html-attributes />
 <mj-breakpoint />
-<mj-font />
 <mj-style>
   /* Global styles can go here */
 </mj-style>

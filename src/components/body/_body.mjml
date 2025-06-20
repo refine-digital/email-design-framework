@@ -1,0 +1,24 @@
+<mj-section>
+  <mj-column>
+    <mj-text>
+      Your Name
+    </mj-text>
+    <mj-text>
+      Your Title
+    </mj-text>
+    <mj-text>
+      Phone: (123) 456-7890
+    </mj-text>
+    <mj-text>
+      Email: your.email@example.com
+    </mj-text>
+    <mj-social>
+      <mj-social-element name="facebook" />
+      <mj-social-element name="linkedin" />
+      <mj-social-element name="instagram" />
+    </mj-social>
+    <mj-text>
+      YourWebsite.com
+    </mj-text>
+  </mj-column>
+</mj-section>

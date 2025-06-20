@@ -1,0 +1,10 @@
+<mj-section>
+  <mj-column>
+    <mj-text>
+      This email is confidential.
+    </mj-text>
+    <mj-text>
+      [Your Company Address]
+    </mj-text>
+  </mj-column>
+</mj-section>
