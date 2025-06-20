@@ -248,8 +248,9 @@
     text-align="center"
   />
 
-
-  <!-- Basic Content Elements -->
+  <!--
+    Basic Content Elements
+  -->
   <!--
     Element: <mj-button>
     Description: Displays a customizable button.
@@ -365,30 +366,30 @@
     table-layout="auto"
     width="100%"
   />
-   <!--
-      Element: <mj-text>
-      Description: This tag allows you to display text and HTML in your email.
-      Documentation: https://documentation.mjml.io/#mj-text
-      Additional Attributes:
-      Attribute | Unit | Description | Default Value
-      container-background-color | color | inner element background color | n/a
-      css-class | string | class name, added to the root HTML element created | n/a
-      font-style | string | normal/italic/oblique | n/a
-      font-weight | number | text thickness | n/a
-      height | px | The height of the element | n/a
-      letter-spacing | px/em | letter spacing | none
-      padding-bottom | px | bottom offset | n/a
-      padding-left | px | left offset | n/a
-      padding-right | px | right offset | n/a
-      padding-top | px | top offset | n/a
-      text-decoration | string | underline/overline/line-through/none | n/a
-      text-transform | string | uppercase/lowercase/capitalize | n/a
-      Notes:
-      - One of the most frequently used components for all textual content.
-      - Supports basic HTML tags like `<a>`, `<strong>`, `<em>` within its content.
-      - Ensure `line-height` is explicitly set for consistent rendering across clients.
-      - `mj-text` is an "ending tag", which means it can contain HTML code which will be left as it is, so it can contain HTML tags with attributes, but it cannot contain other MJML components.
-      - Compiler note: `letter-spacing` might behave unexpectedly or not display a '0px' default in the compiled output despite being documented as `0px`.
+  <!--
+    Element: <mj-text>
+    Description: This tag allows you to display text and HTML in your email.
+    Documentation: https://documentation.mjml.io/#mj-text
+    Additional Attributes:
+    Attribute | Unit | Description | Default Value
+    container-background-color | color | inner element background color | n/a
+    css-class | string | class name, added to the root HTML element created | n/a
+    font-style | string | normal/italic/oblique | n/a
+    font-weight | number | text thickness | n/a
+    height | px | The height of the element | n/a
+    letter-spacing | px/em | letter spacing | none
+    padding-bottom | px | bottom offset | n/a
+    padding-left | px | left offset | n/a
+    padding-right | px | right offset | n/a
+    padding-top | px | top offset | n/a
+    text-decoration | string | underline/overline/line-through/none | n/a
+    text-transform | string | uppercase/lowercase/capitalize | n/a
+    Notes:
+    - One of the most frequently used components for all textual content.
+    - Supports basic HTML tags like `<a>`, `<strong>`, `<em>` within its content.
+    - Ensure `line-height` is explicitly set for consistent rendering across clients.
+    - `mj-text` is an "ending tag", which means it can contain HTML code which will be left as it is, so it can contain HTML tags with attributes, but it cannot contain other MJML components.
+    - Compiler note: `letter-spacing` might behave unexpectedly or not display a '0px' default in the compiled output despite being documented as `0px`.
    -->
    <mj-text
       align="left"
@@ -399,7 +400,9 @@
       padding="10px 25px"
    />
 
-  <!-- Compound Elements -->
+  <!--
+    Compound Elements
+  -->
   <!--
     Element: <mj-accordion>
     Description: Creates an interactive, collapsible accordion component. Users can click titles to reveal hidden content.
@@ -512,7 +515,7 @@
     padding="16px"
   />
 
-<!--
+  <!--
     Element: <mj-carousel>
     Description: mj-carousel displays a gallery of images or "carousel". Readers can interact by hovering and clicking on thumbnails depending on the email client they use. This component enables you to set the styles of the carousel elements.
     Documentation: https://documentation.mjml.io/#mj-carousel
@@ -536,7 +539,7 @@
     tb-border="none"
     thumbnails="hidden"
   />
-<!--
+  <!--
     Element: <mj-carousel-image>
     Description: This component enables you to add and style the images in the carousel.
     Documentation: https://documentation.mjml.io/#mj-carousel-image
@@ -614,14 +617,14 @@
       - `mj-navbar-link` is an "ending tag", which means it can contain HTML code which will be left as it is, so it can contain HTML tags with attributes, but it cannot contain other MJML components.
   -->
 
- <mj-navbar-link
-   color="#000000"
-   font-family="Ubuntu, Helvetica, Arial, sans-serif"
-   font-size="13px"
-   line-height="22px"
-   padding="15px 10px"
-   text-transform="uppercase"
- />
+  <mj-navbar-link
+    color="#000000"
+    font-family="Ubuntu, Helvetica, Arial, sans-serif"
+    font-size="13px"
+    line-height="22px"
+    padding="15px 10px"
+    text-transform="uppercase"
+  />
   <!--
     Element: <mj-social>
     Description: Displays calls-to-action for various social networks with their associated logo. You can add social networks with the mj-social-element tag.
@@ -693,26 +696,27 @@
         </mj-social-element>
 -->
  <mj-social-element
-   align="center"
-   alt=""
-   border-radius="3px"
-   color="#333333"
-   font-family="Ubuntu, Helvetica, Arial, sans-serif"
-   font-size="13px"
-   font-style="normal"
-   font-weight="normal"
-   icon-size="20px"
-   icon-padding="0px"
-   line-height="22px"
-   padding="4px"
-   src=""
-   target="_blank"
-   text-padding="4px 4px 4px 0"
-   vertical-align="middle"
- />
+    align="center"
+    alt=""
+    border-radius="3px"
+    color="#333333"
+    font-family="Ubuntu, Helvetica, Arial, sans-serif"
+    font-size="13px"
+    font-style="normal"
+    font-weight="normal"
+    icon-size="20px"
+    icon-padding="0px"
+    line-height="22px"
+    padding="4px"
+    src=""
+    target="_blank"
+    text-padding="4px 4px 4px 0"
+    vertical-align="middle"
+  />
 
-
-  <!-- Special Elements -->
+  <!--
+    Special Elements
+  -->
   <!--
     Element: <mj-all>
     Description: Applies attributes to all MJML components within the email, acting as a global style reset or baseline.
@@ -725,17 +729,4 @@
     font-family="Ubuntu, Helvetica, Arial, sans-serif"
     color="#000000"
   />
-
-  <!--
-    Element: <mj-class>
-    Description: Defines reusable sets of attributes that can be applied to any MJML component using the `mj-class` attribute.
-    Documentation: https://documentation.mjml.io/#mj-class
-    Notes:
-      - Excellent for creating a design system and reducing repetitive code.
-      - Acts like a CSS class for MJML attributes.
-      - Can be overridden by inline attributes on the component itself.
-    Example:
-      <mj-class name="blue" color="blue" />
-      <mj-class name="big" font-size="20px" />
-  -->
 </mj-attributes>

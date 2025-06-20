@@ -1,6 +1,21 @@
-<mjml>
+<!-- file:index.mjml -->
+<!--
+    Element: <mjml>
+    Description: A MJML document starts with a <mjml> tag, it can contain only mj-head and mj-body tags. Both have the same purpose of head and body in a HTML document.
+    Documentation: https://documentation.mjml.io/#mjml
+    Additional Attributes:
+      Attribute | Unit | Description | Default Value
+      owa | string | if set to "desktop", switch force desktop version for older (self-hosted) version of Outlook.com that doesn't support media queries (cf. this issue) | none
+      lang | string | used as <html lang=""> attribute | und
+      dir | string | used as <html dir=""> attribute | auto
+    Notes:
+      - Use for universal font-family, color, or padding defaults across the entire email.
+      - Attributes defined on specific components (e.g., <mj-text>) or `mj-class` will override `mj-all`.
+-->
+<mjml lang="und" dir="auto" owa="none">
   <mj-head>
     <mj-include path="./design/_head.mjml" />
+    <mj-include path="./design/_classes.mjml" />
   </mj-head>
   <mj-body>
     <!-- Pre-header Section -->

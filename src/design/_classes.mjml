@@ -1,0 +1,13 @@
+<!-- File:_classes.mjml -->
+<!--
+  Element: <mj-class>
+  Description: Defines reusable sets of attributes that can be applied to any MJML component using the `mj-class` attribute.
+  Documentation: https://documentation.mjml.io/#mj-class
+  Notes:
+    - Excellent for creating a design system and reducing repetitive code.
+    - Acts like a CSS class for MJML attributes.
+    - Can be overridden by inline attributes on the component itself.
+  Example:
+    <mj-class name="blue" color="blue" />
+    <mj-class name="big" font-size="20px" />
+-->
