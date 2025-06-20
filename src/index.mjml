@@ -1,9 +1,95 @@
 <mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all />
+      <mj-text />
+      <mj-button />
+      <mj-image />
+      <mj-section />
+      <mj-column />
+      <mj-social />
+      <mj-accordion />
+      <mj-divider />
+      <mj-group />
+      <mj-hero />
+      <mj-navbar />
+      <mj-table />
+      <mj-spacer />
+      <mj-wrapper />
+      <mj-class />
+      <mj-html-attributes />
+      <mj-preview />
+      <mj-title />
+      <mj-carousel-image />
+      <mj-social-element />
+      <mj-accordion-element />
+      <mj-accordion-title />
+      <mj-accordion-text />
+      <mj-navbar-link />
+    </mj-attributes>
+    <mj-breakpoint />
+    <mj-font />
+    <mj-style>
+      /* Global styles can go here */
+    </mj-style>
+    <mj-raw>
+      <!-- Any raw HTML for the head can go here -->
+    </mj-raw>
+  </mj-head>
   <mj-body>
+    <!-- Pre-header Section -->
+    <mj-section>
+      <mj-column>
+        <mj-raw>
+          <!-- Pre-header text that shows in inbox preview -->
+          <span>
+            Email Template Preview.
+          </span>
+        </mj-raw>
+      </mj-column>
+    </mj-section>
+
+    <!-- Header Section -->
+    <mj-section>
+      <mj-column>
+        <mj-image />
+      </mj-column>
+    </mj-section>
+
+    <!-- Main Body Section (for Content) -->
     <mj-section>
       <mj-column>
         <mj-text>
-          Hello, MJML! This is a minimal test.
+          Your Name
+        </mj-text>
+        <mj-text>
+          Your Title
+        </mj-text>
+        <mj-text>
+          Phone: (123) 456-7890
+        </mj-text>
+        <mj-text>
+          Email: your.email@example.com
+        </mj-text>
+        <mj-social>
+          <mj-social-element name="facebook" />
+          <mj-social-element name="linkedin" />
+          <mj-social-element name="instagram" />
+        </mj-social>
+        <mj-text>
+          YourWebsite.com
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer Section -->
+    <mj-section>
+      <mj-column>
+        <mj-text>
+          This email is confidential.
+        </mj-text>
+        <mj-text>
+          [Your Company Address]
         </mj-text>
       </mj-column>
     </mj-section>
