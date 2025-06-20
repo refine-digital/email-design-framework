@@ -1,0 +1,35 @@
+<mj-attributes>
+  <mj-all />
+  <mj-text />
+  <mj-button />
+  <mj-image />
+  <mj-section />
+  <mj-column />
+  <mj-social />
+  <mj-accordion />
+  <mj-divider />
+  <mj-group />
+  <mj-hero />
+  <mj-navbar />
+  <mj-table />
+  <mj-spacer />
+  <mj-wrapper />
+  <mj-class />
+  <mj-html-attributes />
+  <mj-preview />
+  <mj-title />
+  <mj-carousel-image />
+  <mj-social-element />
+  <mj-accordion-element />
+  <mj-accordion-title />
+  <mj-accordion-text />
+  <mj-navbar-link />
+</mj-attributes>
+<mj-breakpoint />
+<mj-font />
+<mj-style>
+  /* Global styles can go here */
+</mj-style>
+<mj-raw>
+  <!-- Any raw HTML for the head can go here -->
+</mj-raw>

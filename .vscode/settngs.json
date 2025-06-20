@@ -14,6 +14,10 @@
     "mjml.snippetsInsideComments": false,           // Prevents snippets and completion items inside comments, as per the fork's details
     "editor.linkedEditing": true,                   // Enables linked editing of HTML/MJML tag pairs, a useful feature of the fork
 
+    // 
+    "diffEditor.ignoreTrimWhitespace": true, // Ignores whitespace changes at the end of lines
+  "diffEditor.renderWhitespace": "none"   // (Optional) Can also hide rendered whitespace characters
+}
     // Git specific setting
     // "git.enableCommitSigning": true                 // Enables GPG commit signing if you have it set up
 }

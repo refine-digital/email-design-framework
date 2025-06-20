@@ -2,7 +2,9 @@
   "name": "email-project-template",
   "version": "1.0.0",
   "scripts": {
-    "build": "mjml src/index.mjml -o dist/index.html"
+    "build": "mjml src/index.mjml -o dist/index.html",
+    "backup-and-build": "mkdir -p .backup/dist && cp -f dist/index.html ./.backup/dist/index.html 2>/dev/null || : && mjml src/index.mjml -o dist/index.html",
+    "compare-builds": "code --diff ./.backup/dist/index.html dist/index.html"
   },
   "devDependencies": {
     "mjml": "^4.0.0"
