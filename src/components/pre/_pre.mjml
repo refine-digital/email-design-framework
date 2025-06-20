@@ -1,3 +1,16 @@
 <!--
- Pre-header is the optional area before the header. It is not the same as <mj-preview>!
+  Section: _pre.mjml
+  Description: Pre-header is the optional area before the header. It is not the same as <mj-preview>!
+  Notes:
+    - This content will appear as part of the visible email body, usually at the very top.
+    - The actual inbox preview text is controlled by the <mj-preview> tag in `design/_head.mjml`.
 -->
+<mj-wrapper mj-class="pre-header-wrapper">
+  <mj-section mj-class="pre-header-section">
+    <mj-column>
+      <mj-text>
+        The PRE-HEADER here
+      </mj-text>
+    </mj-column>
+  </mj-section>
+</mj-wrapper>

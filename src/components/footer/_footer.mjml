@@ -1,10 +1,15 @@
-<mj-section>
-  <mj-column>
-    <mj-text>
-      This email is confidential.
-    </mj-text>
-    <mj-text>
-      [Your Company Address]
-    </mj-text>
-  </mj-column>
-</mj-section>
+<!--
+  Section: _footer.mjml
+  Description: The footer content
+  Notes:
+    - None
+-->
+<mj-wrapper mj-class="footer-wrapper">
+  <mj-section mj-class="footer-section">
+    <mj-column>
+      <mj-text>
+        The FOOTER here
+      </mj-text>
+    </mj-column>
+  </mj-section>
+</mj-wrapper>

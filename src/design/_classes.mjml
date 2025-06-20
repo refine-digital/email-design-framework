@@ -11,3 +11,42 @@
     <mj-class name="blue" color="blue" />
     <mj-class name="big" font-size="20px" />
 -->
+<mj-attributes>
+  <mj-class
+    name="pre-header-wrapper"
+    border="solid blue 1px"
+    background-color="#fffeee" />
+
+  <mj-class
+    name="pre-header-section"
+    border="solid red 1px"
+    background-color="#eeeeee" />
+
+  <mj-class
+    name="header-wrapper"
+    border="solid blue 1px"
+    background-color="#fffddd" />
+  <mj-class
+    name="header-section"
+    border="solid red 1px"
+    background-color="#dddddd" />
+
+  <mj-class
+    name="body-wrapper"
+    border="solid blue 1px"
+    background-color="#fffccc" />
+  <mj-class
+    name="body-section"
+    border="solid red 1px"
+    background-color="#cccccc" />
+
+  <mj-class
+    name="footer-wrapper"
+    border="solid blue 1px"
+    background-color="#fffbbb" />
+  <mj-class
+    name="footer-section"
+    border="solid red 1px"
+    background-color="#bbbbbb" />
+
+</mj-attributes>

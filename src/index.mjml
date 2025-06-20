@@ -17,7 +17,19 @@
     <mj-include path="./design/_head.mjml" />
     <mj-include path="./design/_classes.mjml" />
   </mj-head>
-  <mj-body>
+  <!--
+    Element: <mj-body>
+    Description: This is the starting point of your email.
+    Documentation: https://documentation.mjml.io/#mj-body
+    Additional Attributes:
+      Attribute | Unit | Description | Default Value
+      background-color | color formats | the general background color | n/a
+      css-class | string | class name, added to the root HTML element created | n/a
+      width | px | email's width | 600px
+    Notes:
+      - None
+  -->
+  <mj-body css-class="content" background-color="#ffffff">
     <!-- Pre-header Section -->
     <mj-include path="./components/pre/_pre.mjml" />
 

@@ -67,8 +67,28 @@
     name: my-class;
   }
 </mj-style>
-
 -->
+<mj-style>
+
+  @media (prefers-color-scheme: dark) {
+    .content {
+      background-color: black!important;
+    }
+    .p {
+      color: white!important;
+    }
+
+    .dark-mode-text {
+      color: #ffffff !important;
+    }
+    .dark-mode-background {
+      background-color: #333333 !important;
+    }
+    .dark-mode-image-swap {
+      content: url(https://yourdomain.com/dark-logo.png) !important;
+    }
+  }
+</mj-style>
 
 <!--
   Element: <mj-html-attributes>
