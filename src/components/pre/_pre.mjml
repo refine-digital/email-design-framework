@@ -5,10 +5,10 @@
     - This content will appear as part of the visible email body, usually at the very top.
     - The actual inbox preview text is controlled by the <mj-preview> tag in `design/_head.mjml`.
 -->
-<mj-wrapper mj-class="pre-header-wrapper">
+<mj-wrapper mj-class="pre-header-wrapper" full-width="full-width">
   <mj-section mj-class="pre-header-section">
     <mj-column>
-      <mj-text>
+      <mj-text css-class="">
         The PRE-HEADER here
       </mj-text>
     </mj-column>

@@ -1,0 +1,824 @@
+<mj-attributes>
+<!-- Typography -->
+<!-- Text Colors -->
+<!-- Contextual Utility -->
+<mj-class name="text--dark" color="#000" />
+<mj-class name="text--dark-muted" color="rgba(0, 0, 0, 0.8)" />
+<mj-class name="text--light" color="#fff" />
+<mj-class name="text--light-muted" color="rgba(255, 255, 255, 0.8)" />
+
+<!-- Action -->
+<mj-class name="text--action" />
+<mj-class name="text--action-comp" />
+<mj-class name="text--action-dark" />
+<mj-class name="text--action-hover" />
+<mj-class name="text--action-light" />
+<mj-class name="text--action-medium" />
+<mj-class name="text--action-semi-dark" />
+<mj-class name="text--action-semi-light" />
+<mj-class name="text--action-ultra-dark" />
+<mj-class name="text--action-ultra-light" />
+
+<!-- Primary -->
+<mj-class name="text--primary" color="#595CFF" />
+<mj-class name="text--primary-comp" />
+<mj-class name="text--primary-dark" color="#000280" />
+<mj-class name="text--primary-hover" color="black" />
+<mj-class name="text--primary-light" color="#b3b4ff" />
+<mj-class name="text--primary-medium" />
+<mj-class name="text--primary-semi-dark" color="#0003b3" />
+<mj-class name="text--primary-semi-light" color="#4d4fff" />
+<mj-class name="text--primary-ultra-dark" color="#000133" />
+<mj-class name="text--primary-ultra-light" color="#e6e6ff" />
+
+<!-- Secondary -->
+<mj-class name="text--secondary" color="#59AFFF" />
+<mj-class name="text--secondary-comp" />
+<mj-class name="text--secondary-dark" color="#004280" />
+<mj-class name="text--secondary-hover" color="#002a52" />
+<mj-class name="text--secondary-light" color="#b3daff" />
+<mj-class name="text--secondary-medium" />
+<mj-class name="text--secondary-semi-dark" color="#005cb3" />
+<mj-class name="text--secondary-semi-light" color="#4da9ff" />
+<mj-class name="text--secondary-ultra-dark" color="#001a33" />
+<mj-class name="text--secondary-ultra-light" color="#e6f3ff" />
+
+<!-- Accent -->
+<mj-class name="text--accent" color="#262AFF" />
+<mj-class name="text--accent-comp" />
+<mj-class name="text--accent-dark" color="#000280" />
+<mj-class name="text--accent-hover" color="#4f52ff" />
+<mj-class name="text--accent-light" color="#b3b4ff" />
+<mj-class name="text--accent-medium" />
+<mj-class name="text--accent-semi-dark" color="#0003b3" />
+<mj-class name="text--accent-semi-light" color="#4d4fff" />
+<mj-class name="text--accent-ultra-dark" color="#000133" />
+<mj-class name="text--accent-ultra-light" color="#e6e6ff" />
+
+<!-- Base -->
+<mj-class name="text--base" color="#595CFF" />
+<mj-class name="text--base-comp" />
+<mj-class name="text--base-dark" color="#000280" />
+<mj-class name="text--base-hover" color="#2024ff" />
+<mj-class name="text--base-light" color="#b3b4ff" />
+<mj-class name="text--base-medium" />
+<mj-class name="text--base-semi-dark" color="#0003b3" />
+<mj-class name="text--base-semi-light" color="#4d4fff" />
+<mj-class name="text--base-ultra-dark" color="#000133" />
+<mj-class name="text--base-ultra-light" color="#e6e6ff" />
+
+<!-- Shade -->
+<mj-class name="text--shade" />
+<mj-class name="text--shade-comp" />
+<mj-class name="text--shade-dark" />
+<mj-class name="text--shade-hover" />
+<mj-class name="text--shade-light" />
+<mj-class name="text--shade-medium" />
+<mj-class name="text--shade-semi-dark" />
+<mj-class name="text--shade-semi-light" />
+<mj-class name="text--shade-ultra-dark" />
+<mj-class name="text--shade-ultra-light" />
+
+<!-- Neutral -->
+<mj-class name="text--neutral" color="#847577" />
+<mj-class name="text--neutral-comp" />
+<mj-class name="text--neutral-dark" color="#443c3d" />
+<mj-class name="text--neutral-hover" color="white" />
+<mj-class name="text--neutral-light" color="#dbd6d7" />
+<mj-class name="text--neutral-medium" />
+<mj-class name="text--neutral-semi-dark" color="#5f5455" />
+<mj-class name="text--neutral-semi-light" color="#aba0a2" />
+<mj-class name="text--neutral-ultra-dark" color="#1b1818" />
+<mj-class name="text--neutral-ultra-light" color="#f3f1f2" />
+
+<!-- Black & White -->
+<mj-class name="text--black" color="#000" />
+<mj-class name="text--white" color="#fff" />
+
+<!-- Success -->
+<mj-class name="text--success" />
+<mj-class name="text--success-comp" />
+<mj-class name="text--success-dark" />
+<mj-class name="text--success-hover" />
+<mj-class name="text--success-light" />
+<mj-class name="text--success-medium" />
+<mj-class name="text--success-semi-dark" />
+<mj-class name="text--success-semi-light" />
+<mj-class name="text--success-ultra-dark" />
+<mj-class name="text--success-ultra-light" />
+
+<!-- Danger -->
+<mj-class name="text--danger" />
+<mj-class name="text--danger-comp" />
+<mj-class name="text--danger-dark" />
+<mj-class name="text--danger-hover" />
+<mj-class name="text--danger-light" />
+<mj-class name="text--danger-medium" />
+<mj-class name="text--danger-semi-dark" />
+<mj-class name="text--danger-semi-light" />
+<mj-class name="text--danger-ultra-dark" />
+<mj-class name="text--danger-ultra-light" />
+
+<!-- Warning -->
+<mj-class name="text--warning" />
+<mj-class name="text--warning-comp" />
+<mj-class name="text--warning-dark" />
+<mj-class name="text--warning-hover" />
+<mj-class name="text--warning-light" />
+<mj-class name="text--warning-medium" />
+<mj-class name="text--warning-semi-dark" />
+<mj-class name="text--warning-semi-light" />
+<mj-class name="text--warning-ultra-dark" />
+<mj-class name="text--warning-ultra-light" />
+
+<!-- Info -->
+<mj-class name="text--info" />
+<mj-class name="text--info-comp" />
+<mj-class name="text--info-dark" />
+<mj-class name="text--info-hover" />
+<mj-class name="text--info-light" />
+<mj-class name="text--info-medium" />
+<mj-class name="text--info-semi-dark" />
+<mj-class name="text--info-semi-light" />
+<mj-class name="text--info-ultra-dark" />
+<mj-class name="text--info-ultra-light" />
+
+
+<!-- Background -->
+<!-- Background Colors -->
+<!-- Contextual Utility -->
+<mj-class name="bg--dark" background-color="#443c3d" color="var(--bg-dark-text, #fff)" />
+<mj-class name="bg--light" background-color="#dbd6d7" color="var(--bg-light-text, #000)" />
+<mj-class name="bg--ultra-dark" background-color="#1b1818" color="var(--bg-ultra-dark-text, #fff)" />
+<mj-class name="bg--ultra-light" background-color="#f3f1f2" color="var(--bg-ultra-light-text, #000)" />
+
+<!-- Action -->
+<mj-class name="bg--action" />
+<mj-class name="bg--action-comp" />
+<mj-class name="bg--action-dark" />
+<mj-class name="bg--action-hover" />
+<mj-class name="bg--action-light" />
+<mj-class name="bg--action-medium" />
+<mj-class name="bg--action-semi-dark" />
+<mj-class name="bg--action-semi-light" />
+<mj-class name="bg--action-ultra-dark" />
+<mj-class name="bg--action-ultra-light" />
+
+<!-- Primary -->
+<mj-class name="bg--primary" background-color="#595CFF" />
+<mj-class name="bg--primary-comp" />
+<mj-class name="bg--primary-dark" background-color="#000280" />
+<mj-class name="bg--primary-hover" background-color="black" />
+<mj-class name="bg--primary-light" background-color="#b3b4ff" />
+<mj-class name="bg--primary-medium" />
+<mj-class name="bg--primary-semi-dark" background-color="#0003b3" />
+<mj-class name="bg--primary-semi-light" background-color="#4d4fff" />
+<mj-class name="bg--primary-ultra-dark" background-color="#000133" />
+<mj-class name="bg--primary-ultra-light" background-color="#e6e6ff" />
+
+<!-- Secondary -->
+<mj-class name="bg--secondary" background-color="#59AFFF" />
+<mj-class name="bg--secondary-comp" />
+<mj-class name="bg--secondary-dark" background-color="#004280" />
+<mj-class name="bg--secondary-hover" background-color="#002a52" />
+<mj-class name="bg--secondary-light" background-color="#b3daff" />
+<mj-class name="bg--secondary-medium" />
+<mj-class name="bg--secondary-semi-dark" background-color="#005cb3" />
+<mj-class name="bg--secondary-semi-light" background-color="#4da9ff" />
+<mj-class name="bg--secondary-ultra-dark" background-color="#001a33" />
+<mj-class name="bg--secondary-ultra-light" background-color="#e6f3ff" />
+
+<!-- Accent -->
+<mj-class name="bg--accent" background-color="#262AFF" />
+<mj-class name="bg--accent-comp" />
+<mj-class name="bg--accent-dark" background-color="#000280" />
+<mj-class name="bg--accent-hover" background-color="#4f52ff" />
+<mj-class name="bg--accent-light" background-color="#b3b4ff" />
+<mj-class name="bg--accent-medium" />
+<mj-class name="bg--accent-semi-dark" background-color="#0003b3" />
+<mj-class name="bg--accent-semi-light" background-color="#4d4fff" />
+<mj-class name="bg--accent-ultra-dark" background-color="#000133" />
+<mj-class name="bg--accent-ultra-light" background-color="#e6e6ff" />
+
+<!-- Base -->
+<mj-class name="bg--base" background-color="#595CFF" />
+<mj-class name="bg--base-comp" />
+<mj-class name="bg--base-dark" background-color="#000280" />
+<mj-class name="bg--base-hover" background-color="#2024ff" />
+<mj-class name="bg--base-light" background-color="#b3b4ff" />
+<mj-class name="bg--base-medium" />
+<mj-class name="bg--base-semi-dark" background-color="#0003b3" />
+<mj-class name="bg--base-semi-light" background-color="#4d4fff" />
+<mj-class name="bg--base-ultra-dark" background-color="#000133" />
+<mj-class name="bg--base-ultra-light" background-color="#e6e6ff" />
+
+<!-- Neutral -->
+<mj-class name="bg--neutral" background-color="#847577" />
+<mj-class name="bg--neutral-comp" />
+<mj-class name="bg--neutral-dark" background-color="#443c3d" />
+<mj-class name="bg--neutral-hover" background-color="white" />
+<mj-class name="bg--neutral-light" background-color="#dbd6d7" />
+<mj-class name="bg--neutral-medium" />
+<mj-class name="bg--neutral-semi-dark" background-color="#5f5455" />
+<mj-class name="bg--neutral-semi-light" background-color="#aba0a2" />
+<mj-class name="bg--neutral-ultra-dark" background-color="#1b1818" />
+<mj-class name="bg--neutral-ultra-light" background-color="#f3f1f2" />
+
+<!-- Shade -->
+<mj-class name="bg--shade" />
+<mj-class name="bg--shade-comp" />
+<mj-class name="bg--shade-dark" />
+<mj-class name="bg--shade-hover" />
+<mj-class name="bg--shade-light" />
+<mj-class name="bg--shade-medium" />
+<mj-class name="bg--shade-semi-dark" />
+<mj-class name="bg--shade-semi-light" />
+<mj-class name="bg--shade-ultra-dark" />
+<mj-class name="bg--shade-ultra-light" />
+
+<!-- Black & White -->
+<mj-class name="bg--black" background-color="#000" />
+<mj-class name="bg--white" background-color="#fff" />
+
+<!-- Success -->
+<mj-class name="bg--success" />
+<mj-class name="bg--success-comp" />
+<mj-class name="bg--success-dark" />
+<mj-class name="bg--success-hover" />
+<mj-class name="bg--success-light" />
+<mj-class name="bg--success-medium" />
+<mj-class name="bg--success-semi-dark" />
+<mj-class name="bg--success-semi-light" />
+<mj-class name="bg--success-ultra-dark" />
+<mj-class name="bg--success-ultra-light" />
+
+<!-- Danger -->
+<mj-class name="bg--danger" />
+<mj-class name="bg--danger-comp" />
+<mj-class name="bg--danger-dark" />
+<mj-class name="bg--danger-hover" />
+<mj-class name="bg--danger-light" />
+<mj-class name="bg--danger-medium" />
+<mj-class name="bg--danger-semi-dark" />
+<mj-class name="bg--danger-semi-light" />
+<mj-class name="bg--danger-ultra-dark" />
+<mj-class name="bg--danger-ultra-light" />
+
+<!-- Warning -->
+<mj-class name="bg--warning" />
+<mj-class name="bg--warning-comp" />
+<mj-class name="bg--warning-dark" />
+<mj-class name="bg--warning-hover" />
+<mj-class name="bg--warning-light" />
+<mj-class name="bg--warning-medium" />
+<mj-class name="bg--warning-semi-dark" />
+<mj-class name="bg--warning-semi-light" />
+<mj-class name="bg--warning-ultra-dark" />
+<mj-class name="bg--warning-ultra-light" />
+
+<!-- Info -->
+<mj-class name="bg--info" />
+<mj-class name="bg--info-comp" />
+<mj-class name="bg--info-dark" />
+<mj-class name="bg--info-hover" />
+<mj-class name="bg--info-light" />
+<mj-class name="bg--info-medium" />
+<mj-class name="bg--info-semi-dark" />
+<mj-class name="bg--info-semi-light" />
+<mj-class name="bg--info-ultra-dark" />
+<mj-class name="bg--info-ultra-light" />
+
+<!-- Overlays -->
+<!-- Action -->
+<mj-class name="overlay--action-dark-trans-90" />
+<mj-class name="overlay--action-light-trans-90" />
+<mj-class name="overlay--action-trans-90" />
+<mj-class name="overlay--action-ultra-dark-trans-90" />
+
+<!-- Primary -->
+<mj-class name="overlay--primary-dark-trans-90" />
+<mj-class name="overlay--primary-light-trans-90" />
+<mj-class name="overlay--primary-trans-90" />
+<mj-class name="overlay--primary-ultra-dark-trans-90" />
+
+<!-- Secondary -->
+<mj-class name="overlay--secondary-dark-trans-90" />
+<mj-class name="overlay--secondary-light-trans-90" />
+<mj-class name="overlay--secondary-trans-90" />
+<mj-class name="overlay--secondary-ultra-dark-trans-90" />
+
+<!-- Accent -->
+<mj-class name="overlay--accent-dark-trans-90" />
+<mj-class name="overlay--accent-light-trans-90" />
+<mj-class name="overlay--accent-trans-90" />
+<mj-class name="overlay--accent-ultra-dark-trans-90" />
+
+<!-- Base -->
+<mj-class name="overlay--base-dark-trans-90" />
+<mj-class name="overlay--base-light-trans-90" />
+<mj-class name="overlay--base-trans-90" />
+<mj-class name="overlay--base-ultra-dark-trans-90" />
+
+<!-- Neutral -->
+<mj-class name="overlay--neutral-dark-trans-90" />
+<mj-class name="overlay--neutral-light-trans-90" />
+<mj-class name="overlay--neutral-trans-90" />
+<mj-class name="overlay--neutral-ultra-dark-trans-90" />
+
+<!-- Shade -->
+<mj-class name="overlay--shade-dark-trans-90" />
+<mj-class name="overlay--shade-light-trans-90" />
+<mj-class name="overlay--shade-trans-90" />
+<mj-class name="overlay--shade-ultra-dark-trans-90" />
+
+<!-- Black & White -->
+<mj-class name="overlay--black-trans-90" />
+<mj-class name="overlay--white-trans-90" />
+
+
+<!-- Button Link -->
+<!-- Button -->
+<!-- Button Color -->
+<mj-class name="btn--accent" />
+<mj-class name="btn--accent-dark" />
+<mj-class name="btn--accent-light" />
+<mj-class name="btn--action" />
+<mj-class name="btn--base" />
+<mj-class name="btn--base-dark" />
+<mj-class name="btn--base-light" />
+<mj-class name="btn--black" />
+<mj-class name="btn--neutral" />
+<mj-class name="btn--neutral-dark" />
+<mj-class name="btn--neutral-light" />
+<mj-class name="btn--primary" />
+<mj-class name="btn--primary-dark" />
+<mj-class name="btn--primary-light" />
+<mj-class name="btn--secondary" />
+<mj-class name="btn--secondary-dark" />
+<mj-class name="btn--secondary-light" />
+<mj-class name="btn--tertiary" />
+<mj-class name="btn--tertiary-dark" />
+<mj-class name="btn--tertiary-light" />
+<mj-class name="btn--white" />
+
+<!-- Button Size -->
+<mj-class name="btn--l" />
+<mj-class name="btn--m" />
+<mj-class name="btn--s" />
+<mj-class name="btn--xl" />
+<mj-class name="btn--xs" />
+<mj-class name="btn--xxl" />
+
+<!-- Link -->
+<!-- Action -->
+<mj-class name="link--action" />
+<mj-class name="link--action-comp" />
+<mj-class name="link--action-dark" />
+<mj-class name="link--action-hover" />
+<mj-class name="link--action-light" />
+<mj-class name="link--action-medium" />
+<mj-class name="link--action-semi-dark" />
+<mj-class name="link--action-semi-light" />
+<mj-class name="link--action-ultra-dark" />
+<mj-class name="link--action-ultra-light" />
+
+<!-- Primary -->
+<mj-class name="link--primary" />
+<mj-class name="link--primary-comp" />
+<mj-class name="link--primary-dark" />
+<mj-class name="link--primary-hover" />
+<mj-class name="link--primary-light" />
+<mj-class name="link--primary-medium" />
+<mj-class name="link--primary-semi-dark" />
+<mj-class name="link--primary-semi-light" />
+<mj-class name="link--primary-ultra-dark" />
+<mj-class name="link--primary-ultra-light" />
+
+<!-- Secondary -->
+<mj-class name="link--secondary" />
+<mj-class name="link--secondary-comp" />
+<mj-class name="link--secondary-dark" />
+<mj-class name="link--secondary-hover" />
+<mj-class name="link--secondary-light" />
+<mj-class name="link--secondary-medium" />
+<mj-class name="link--secondary-semi-dark" />
+<mj-class name="link--secondary-semi-light" />
+<mj-class name="link--secondary-ultra-dark" />
+<mj-class name="link--secondary-ultra-light" />
+
+<!-- Accent -->
+<mj-class name="link--accent" />
+<mj-class name="link--accent-comp" />
+<mj-class name="link--accent-dark" />
+<mj-class name="link--accent-hover" />
+<mj-class name="link--accent-light" />
+<mj-class name="link--accent-medium" />
+<mj-class name="link--accent-semi-dark" />
+<mj-class name="link--accent-semi-light" />
+<mj-class name="link--accent-ultra-dark" />
+<mj-class name="link--accent-ultra-light" />
+
+<!-- Base -->
+<mj-class name="link--base" />
+<mj-class name="link--base-comp" />
+<mj-class name="link--base-dark" />
+<mj-class name="link--base-hover" />
+<mj-class name="link--base-light" />
+<mj-class name="link--base-medium" />
+<mj-class name="link--base-semi-dark" />
+<mj-class name="link--base-semi-light" />
+<mj-class name="link--base-ultra-dark" />
+<mj-class name="link--base-ultra-light" />
+
+<!-- Neutral -->
+<mj-class name="link--neutral" />
+<mj-class name="link--neutral-comp" />
+<mj-class name="link--neutral-dark" />
+<mj-class name="link--neutral-hover" />
+<mj-class name="link--neutral-light" />
+<mj-class name="link--neutral-medium" />
+<mj-class name="link--neutral-semi-dark" />
+<mj-class name="link--neutral-semi-light" />
+<mj-class name="link--neutral-ultra-dark" />
+<mj-class name="link--neutral-ultra-light" />
+
+<!-- Shade -->
+<mj-class name="link--shade" />
+<mj-class name="link--shade-comp" />
+<mj-class name="link--shade-dark" />
+<mj-class name="link--shade-hover" />
+<mj-class name="link--shade-light" />
+<mj-class name="link--shade-medium" />
+<mj-class name="link--shade-semi-dark" />
+<mj-class name="link--shade-semi-light" />
+<mj-class name="link--shade-ultra-dark" />
+<mj-class name="link--shade-ultra-light" />
+
+<!-- Black & White -->
+<mj-class name="link--black" />
+<mj-class name="link--white" />
+
+<!-- Success -->
+<mj-class name="link--success" />
+<mj-class name="link--success-comp" />
+<mj-class name="link--success-dark" />
+<mj-class name="link--success-hover" />
+<mj-class name="link--success-light" />
+<mj-class name="link--success-medium" />
+<mj-class name="link--success-semi-dark" />
+<mj-class name="link--success-semi-light" />
+<mj-class name="link--success-ultra-dark" />
+<mj-class name="link--success-ultra-light" />
+
+<!-- Danger -->
+<mj-class name="link--danger" />
+<mj-class name="link--danger-comp" />
+<mj-class name="link--danger-dark" />
+<mj-class name="link--danger-hover" />
+<mj-class name="link--danger-light" />
+<mj-class name="link--danger-medium" />
+<mj-class name="link--danger-semi-dark" />
+<mj-class name="link--danger-semi-light" />
+<mj-class name="link--danger-ultra-dark" />
+<mj-class name="link--danger-ultra-light" />
+
+<!-- Warning -->
+<mj-class name="link--warning" />
+<mj-class name="link--warning-comp" />
+<mj-class name="link--warning-dark" />
+<mj-class name="link--warning-hover" />
+<mj-class name="link--warning-light" />
+<mj-class name="link--warning-medium" />
+<mj-class name="link--warning-semi-dark" />
+<mj-class name="link--warning-semi-light" />
+<mj-class name="link--warning-ultra-dark" />
+<mj-class name="link--warning-ultra-light" />
+
+<!-- Info -->
+<mj-class name="link--info" />
+<mj-class name="link--info-comp" />
+<mj-class name="link--info-dark" />
+<mj-class name="link--info-hover" />
+<mj-class name="link--info-light" />
+<mj-class name="link--info-medium" />
+<mj-class name="link--info-semi-dark" />
+<mj-class name="link--info-semi-light" />
+<mj-class name="link--info-ultra-dark" />
+<mj-class name="link--info-ultra-light" />
+
+<!-- Link Hover -->
+<!-- Action -->
+<mj-class name="link-hover--action" />
+<mj-class name="link-hover--action-comp" />
+<mj-class name="link-hover--action-dark" />
+<mj-class name="link-hover--action-hover" />
+<mj-class name="link-hover--action-light" />
+<mj-class name="link-hover--action-medium" />
+<mj-class name="link-hover--action-semi-dark" />
+<mj-class name="link-hover--action-semi-light" />
+<mj-class name="link-hover--action-ultra-dark" />
+<mj-class name="link-hover--action-ultra-light" />
+
+<!-- Primary -->
+<mj-class name="link-hover--primary" />
+<mj-class name="link-hover--primary-comp" />
+<mj-class name="link-hover--primary-dark" />
+<mj-class name="link-hover--primary-hover" />
+<mj-class name="link-hover--primary-light" />
+<mj-class name="link-hover--primary-medium" />
+<mj-class name="link-hover--primary-semi-dark" />
+<mj-class name="link-hover--primary-semi-light" />
+<mj-class name="link-hover--primary-ultra-dark" />
+<mj-class name="link-hover--primary-ultra-light" />
+
+<!-- Secondary -->
+<mj-class name="link-hover--secondary" />
+<mj-class name="link-hover--secondary-comp" />
+<mj-class name="link-hover--secondary-dark" />
+<mj-class name="link-hover--secondary-hover" />
+<mj-class name="link-hover--secondary-light" />
+<mj-class name="link-hover--secondary-medium" />
+<mj-class name="link-hover--secondary-semi-dark" />
+<mj-class name="link-hover--secondary-semi-light" />
+<mj-class name="link-hover--secondary-ultra-dark" />
+<mj-class name="link-hover--secondary-ultra-light" />
+
+<!-- Accent -->
+<mj-class name="link-hover--accent" />
+<mj-class name="link-hover--accent-comp" />
+<mj-class name="link-hover--accent-dark" />
+<mj-class name="link-hover--accent-hover" />
+<mj-class name="link-hover--accent-light" />
+<mj-class name="link-hover--accent-medium" />
+<mj-class name="link-hover--accent-semi-dark" />
+<mj-class name="link-hover--accent-semi-light" />
+<mj-class name="link-hover--accent-ultra-dark" />
+<mj-class name="link-hover--accent-ultra-light" />
+
+<!-- Base -->
+<mj-class name="link-hover--base" />
+<mj-class name="link-hover--base-comp" />
+<mj-class name="link-hover--base-dark" />
+<mj-class name="link-hover--base-hover" />
+<mj-class name="link-hover--base-light" />
+<mj-class name="link-hover--base-medium" />
+<mj-class name="link-hover--base-semi-dark" />
+<mj-class name="link-hover--base-semi-light" />
+<mj-class name="link-hover--base-ultra-dark" />
+<mj-class name="link-hover--base-ultra-light" />
+
+<!-- Neutral -->
+<mj-class name="link-hover--neutral" />
+<mj-class name="link-hover--neutral-comp" />
+<mj-class name="link-hover--neutral-dark" />
+<mj-class name="link-hover--neutral-hover" />
+<mj-class name="link-hover--neutral-light" />
+<mj-class name="link-hover--neutral-medium" />
+<mj-class name="link-hover--neutral-semi-dark" />
+<mj-class name="link-hover--neutral-semi-light" />
+<mj-class name="link-hover--neutral-ultra-dark" />
+<mj-class name="link-hover--neutral-ultra-light" />
+
+<!-- Shade -->
+<mj-class name="link-hover--shade" />
+<mj-class name="link-hover--shade-comp" />
+<mj-class name="link-hover--shade-dark" />
+<mj-class name="link-hover--shade-hover" />
+<mj-class name="link-hover--shade-light" />
+<mj-class name="link-hover--shade-medium" />
+<mj-class name="link-hover--shade-semi-dark" />
+<mj-class name="link-hover--shade-semi-light" />
+<mj-class name="link-hover--shade-ultra-dark" />
+<mj-class name="link-hover--shade-ultra-light" />
+
+<!-- Black & White -->
+<mj-class name="link-hover--black" />
+<mj-class name="link-hover--white" />
+
+<!-- Success -->
+<mj-class name="link-hover--success" />
+<mj-class name="link-hover--success-comp" />
+<mj-class name="link-hover--success-dark" />
+<mj-class name="link-hover--success-hover" />
+<mj-class name="link-hover--success-light" />
+<mj-class name="link-hover--success-medium" />
+<mj-class name="link-hover--success-semi-dark" />
+<mj-class name="link-hover--success-semi-light" />
+<mj-class name="link-hover--success-ultra-dark" />
+<mj-class name="link-hover--success-ultra-light" />
+
+<!-- Danger -->
+<mj-class name="link-hover--danger" />
+<mj-class name="link-hover--danger-comp" />
+<mj-class name="link-hover--danger-dark" />
+<mj-class name="link-hover--danger-hover" />
+<mj-class name="link-hover--danger-light" />
+<mj-class name="link-hover--danger-medium" />
+<mj-class name="link-hover--danger-semi-dark" />
+<mj-class name="link-hover--danger-semi-light" />
+<mj-class name="link-hover--danger-ultra-dark" />
+<mj-class name="link-hover--danger-ultra-light" />
+
+<!-- Warning -->
+<mj-class name="link-hover--warning" />
+<mj-class name="link-hover--warning-comp" />
+<mj-class name="link-hover--warning-dark" />
+<mj-class name="link-hover--warning-hover" />
+<mj-class name="link-hover--warning-light" />
+<mj-class name="link-hover--warning-medium" />
+<mj-class name="link-hover--warning-semi-dark" />
+<mj-class name="link-hover--warning-semi-light" />
+<mj-class name="link-hover--warning-ultra-dark" />
+<mj-class name="link-hover--warning-ultra-light" />
+
+<!-- Info -->
+<mj-class name="link-hover--info" />
+<mj-class name="link-hover--info-comp" />
+<mj-class name="link-hover--info-dark" />
+<mj-class name="link-hover--info-hover" />
+<mj-class name="link-hover--info-light" />
+<mj-class name="link-hover--info-medium" />
+<mj-class name="link-hover--info-semi-dark" />
+<mj-class name="link-hover--info-semi-light" />
+<mj-class name="link-hover--info-ultra-dark" />
+<mj-class name="link-hover--info-ultra-light" />
+
+
+<!-- List Marker -->
+<!-- Marker -->
+<!-- Action -->
+<mj-class name="marker--action" />
+<mj-class name="marker--action-comp" />
+<mj-class name="marker--action-dark" />
+<mj-class name="marker--action-hover" />
+<mj-class name="marker--action-light" />
+<mj-class name="marker--action-medium" />
+<mj-class name="marker--action-semi-dark" />
+<mj-class name="marker--action-semi-light" />
+<mj-class name="marker--action-ultra-dark" />
+<mj-class name="marker--action-ultra-light" />
+
+<!-- Primary -->
+<mj-class name="marker--primary" color="#595CFF" />
+<mj-class name="marker--primary-comp" />
+<mj-class name="marker--primary-dark" color="#000280" />
+<mj-class name="marker--primary-hover" color="black" />
+<mj-class name="marker--primary-light" color="#b3b4ff" />
+<mj-class name="marker--primary-medium" />
+<mj-class name="marker--primary-semi-dark" color="#0003b3" />
+<mj-class name="marker--primary-semi-light" color="#4d4fff" />
+<mj-class name="marker--primary-ultra-dark" color="#000133" />
+<mj-class name="marker--primary-ultra-light" color="#e6e6ff" />
+
+<!-- Secondary -->
+<mj-class name="marker--secondary" color="#59AFFF" />
+<mj-class name="marker--secondary-comp" />
+<mj-class name="marker--secondary-dark" color="#004280" />
+<mj-class name="marker--secondary-hover" color="#002a52" />
+<mj-class name="marker--secondary-light" color="#b3daff" />
+<mj-class name="marker--secondary-medium" />
+<mj-class name="marker--secondary-semi-dark" color="#005cb3" />
+<mj-class name="marker--secondary-semi-light" color="#4da9ff" />
+<mj-class name="marker--secondary-ultra-dark" color="#001a33" />
+<mj-class name="marker--secondary-ultra-light" color="#e6f3ff" />
+
+<!-- Accent -->
+<mj-class name="marker--accent" color="#262AFF" />
+<mj-class name="marker--accent-comp" />
+<mj-class name="marker--accent-dark" color="#000280" />
+<mj-class name="marker--accent-hover" color="#4f52ff" />
+<mj-class name="marker--accent-light" color="#b3b4ff" />
+<mj-class name="marker--accent-medium" />
+<mj-class name="marker--accent-semi-dark" color="#0003b3" />
+<mj-class name="marker--accent-semi-light" color="#4d4fff" />
+<mj-class name="marker--accent-ultra-dark" color="#000133" />
+<mj-class name="marker--accent-ultra-light" color="#e6e6ff" />
+
+<!-- Base -->
+<mj-class name="marker--base" color="#595CFF" />
+<mj-class name="marker--base-comp" />
+<mj-class name="marker--base-dark" color="#000280" />
+<mj-class name="marker--base-hover" color="#2024ff" />
+<mj-class name="marker--base-light" color="#b3b4ff" />
+<mj-class name="marker--base-medium" />
+<mj-class name="marker--base-semi-dark" color="#0003b3" />
+<mj-class name="marker--base-semi-light" color="#4d4fff" />
+<mj-class name="marker--base-ultra-dark" color="#000133" />
+<mj-class name="marker--base-ultra-light" color="#e6e6ff" />
+
+<!-- Neutral -->
+<mj-class name="marker--neutral" color="#847577" />
+<mj-class name="marker--neutral-comp" />
+<mj-class name="marker--neutral-dark" color="#443c3d" />
+<mj-class name="marker--neutral-hover" color="white" />
+<mj-class name="marker--neutral-light" color="#dbd6d7" />
+<mj-class name="marker--neutral-medium" />
+<mj-class name="marker--neutral-semi-dark" color="#5f5455" />
+<mj-class name="marker--neutral-semi-light" color="#aba0a2" />
+<mj-class name="marker--neutral-ultra-dark" color="#1b1818" />
+<mj-class name="marker--neutral-ultra-light" color="#f3f1f2" />
+
+<!-- Shade -->
+<mj-class name="marker--shade" />
+<mj-class name="marker--shade-comp" />
+<mj-class name="marker--shade-dark" />
+<mj-class name="marker--shade-hover" />
+<mj-class name="marker--shade-light" />
+<mj-class name="marker--shade-medium" />
+<mj-class name="marker--shade-semi-dark" />
+<mj-class name="marker--shade-semi-light" />
+<mj-class name="marker--shade-ultra-dark" />
+<mj-class name="marker--shade-ultra-light" />
+
+<!-- White -->
+<mj-class name="marker--white" color="#fff" />
+
+<!-- Black -->
+<mj-class name="marker--black" color="#000" />
+
+
+<!-- Accessibility -->
+<!-- Focus -->
+<!-- Action -->
+<mj-class name="focus--action" />
+<mj-class name="focus--action-dark" />
+<mj-class name="focus--action-light" />
+<mj-class name="focus--action-medium" />
+<mj-class name="focus--action-semi-dark" />
+<mj-class name="focus--action-semi-light" />
+<mj-class name="focus--action-ultra-dark" />
+<mj-class name="focus--action-ultra-light" />
+
+<!-- Primary -->
+<mj-class name="focus--primary" />
+<mj-class name="focus--primary-dark" />
+<mj-class name="focus--primary-light" />
+<mj-class name="focus--primary-medium" />
+<mj-class name="focus--primary-semi-dark" />
+<mj-class name="focus--primary-semi-light" />
+<mj-class name="focus--primary-ultra-dark" />
+<mj-class name="focus--primary-ultra-light" />
+
+<!-- Secondary -->
+<mj-class name="focus--secondary" />
+<mj-class name="focus--secondary-dark" />
+<mj-class name="focus--secondary-light" />
+<mj-class name="focus--secondary-medium" />
+<mj-class name="focus--secondary-semi-dark" />
+<mj-class name="focus--secondary-semi-light" />
+<mj-class name="focus--secondary-ultra-dark" />
+<mj-class name="focus--secondary-ultra-light" />
+
+<!-- Accent -->
+<mj-class name="focus--accent" />
+<mj-class name="focus--accent-dark" />
+<mj-class name="focus--accent-light" />
+<mj-class name="focus--accent-medium" />
+<mj-class name="focus--accent-semi-dark" />
+<mj-class name="focus--accent-semi-light" />
+<mj-class name="focus--accent-ultra-dark" />
+<mj-class name="focus--accent-ultra-light" />
+
+<!-- Base -->
+<mj-class name="focus--base" />
+<mj-class name="focus--base-dark" />
+<mj-class name="focus--base-light" />
+<mj-class name="focus--base-medium" />
+<mj-class name="focus--base-semi-dark" />
+<mj-class name="focus--base-semi-light" />
+<mj-class name="focus--base-ultra-dark" />
+<mj-class name="focus--base-ultra-light" />
+
+<!-- Neutral -->
+<mj-class name="focus--neutral" />
+<mj-class name="focus--neutral-dark" />
+<mj-class name="focus--neutral-light" />
+<mj-class name="focus--neutral-medium" />
+<mj-class name="focus--neutral-semi-dark" />
+<mj-class name="focus--neutral-semi-light" />
+<mj-class name="focus--neutral-ultra-dark" />
+<mj-class name="focus--neutral-ultra-light" />
+
+<!-- Shade -->
+<mj-class name="focus--shade" />
+<mj-class name="focus--shade-dark" />
+<mj-class name="focus--shade-light" />
+<mj-class name="focus--shade-medium" />
+<mj-class name="focus--shade-semi-dark" />
+<mj-class name="focus--shade-semi-light" />
+<mj-class name="focus--shade-ultra-dark" />
+<mj-class name="focus--shade-ultra-light" />
+
+<!-- Black -->
+<mj-class name="focus--black" />
+
+<!-- White -->
+<mj-class name="focus--white" />
+
+<!-- Focus Parent -->
+<mj-class name="focus-parent" outline="none" outline-offset="2px" box-shadow="none" />
+<mj-class name="focus-parent--outline" outline="none" outline-offset="2px" box-shadow="none" />
+<mj-class name="focus-parent--shadow" box-shadow="none" outline="none" />
+
+
+</mj-attributes>

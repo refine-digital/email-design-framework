@@ -12,20 +12,35 @@
     <mj-class name="big" font-size="20px" />
 -->
 <mj-attributes>
+<!--
   <mj-class
     name="pre-header-wrapper"
+    padding="0"
     border="solid blue 1px"
     background-color="#fffeee" />
-
+-->
+  <mj-class
+    name="pre-header-wrapper"
+    padding="0"
+  />
+<!--
   <mj-class
     name="pre-header-section"
+    padding="0"
     border="solid red 1px"
     background-color="#eeeeee" />
+-->
+  <mj-class
+    name="pre-header-section"
+    padding="20px"
 
+  />
   <mj-class
     name="header-wrapper"
     border="solid blue 1px"
-    background-color="#fffddd" />
+    background-color="#fffddd"
+  />
+
   <mj-class
     name="header-section"
     border="solid red 1px"
@@ -50,3 +65,6 @@
     background-color="#bbbbbb" />
 
 </mj-attributes>
+
+<!-- Import any ACSS classes -->
+<mj-include path="./style.mjml" />

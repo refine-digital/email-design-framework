@@ -4,9 +4,12 @@
   "scripts": {
     "build": "mjml src/index.mjml -o dist/index.html && code dist/index.html",
     "backup-and-build": "mkdir -p .backup/dist && cp -f dist/index.html ./.backup/dist/index.html 2>/dev/null || : && mjml src/index.mjml -o dist/index.html && code dist/index.html",
-    "compare-builds": "code --diff ./.backup/dist/index.html dist/index.html"
+    "compare-builds": "code --diff ./.backup/dist/index.html dist/index.html",
+    "import-styles-to-mjml": "node scripts/import-acss-to-mjml.js"
   },
   "devDependencies": {
-    "mjml": "^4.0.0"
+    "mjml": "^4.0.0",
+    "postcss": "latest",
+    "postcss-safe-parser": "^7.0.1"
   }
 }

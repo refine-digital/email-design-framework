@@ -1,0 +1,29 @@
+{
+    "import_config": {
+        "categories": [
+            "typography",
+            "background",
+            "button-link",
+            "border",
+            "list-marker",
+            "cards",
+            "icons",
+            "accessibility",
+            "color"
+        ],
+        "category_groups": {
+            "layout": [
+                "width",
+                "divider"
+            ],
+            "spacing": [
+                "spacing",
+                "padding",
+                "section padding",
+                "gutter",
+                "smart-spacing"
+            ]
+        },
+        "specific_classes": []
+      }
+  }
