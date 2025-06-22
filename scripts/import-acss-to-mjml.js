@@ -1,5 +1,5 @@
 // import-acss-to-mjml.js
-// Version: 0.1.1
+// Version: 0.1.2
 // Description: Processes CSS and framework definitions to generate MJML classes.
 
 const fs = require('fs');
@@ -14,7 +14,6 @@ const FRAMEWORK_JSON_PATH = path.join(ROOT_DIR, 'src', 'design', 'framework.json
 const OUTPUT_MJML_STYLE_PATH = path.join(ROOT_DIR, 'src', 'design', 'style.mjml');
 const STYLE_CSS_PATH = path.join(ROOT_DIR, 'src', 'design', 'style.css');
 /**
- * [CORRECTED FUNCTION]
  * Parse the CSS and build a map of className => { prop: value }
  * Uses a robust regex to find all class names within complex selectors.
  */
