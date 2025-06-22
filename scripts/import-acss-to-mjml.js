@@ -1,5 +1,5 @@
 // import-acss-to-mjml.js
-// Version: 0.1.2
+// Version: 0.1.3
 // Description: Processes CSS and framework definitions to generate MJML classes.
 
 const fs = require('fs');
@@ -144,7 +144,7 @@ async function main() {
         const frameworkJson = JSON.parse(fs.readFileSync(FRAMEWORK_JSON_PATH, 'utf8'));
         const foundClassPaths = [];
         traverseAndCollectPaths(frameworkJson, [], categoriesToImport, foundClassPaths);
-        console.log(`Step 2 & 3 Complete. Found ${foundClassPaths.length} class paths.`);
+        console.log(`Step 2 Complete. Found ${foundClassPaths.length} class paths.`);
 
         // Step 3: category_group classes by category > category_group > class_group
         const groupedClasses = {};
@@ -159,10 +159,12 @@ async function main() {
             groupedClasses[category][category_group][class_group] ??= [];
             groupedClasses[category][category_group][class_group].push(className);
         }
+        console.log(`Step 3 Complete. Category_group classes by category > category_group > class_group.`);
 
         // Step 4 : Parse CSS and map class properties
         const styleCss = fs.readFileSync(STYLE_CSS_PATH, 'utf8');
         const cssClassMap = await extractCssDeclarations(styleCss);
+        console.log(`Step 4 Complete. Parse CSS and map class properties.`);
 
         // Step 5 : Generate final MJML content
 
@@ -218,7 +220,7 @@ async function main() {
         mjmlOutput += `</mj-attributes>`;
 
         fs.writeFileSync(OUTPUT_MJML_STYLE_PATH, mjmlOutput);
-        console.log(`✅ Step 4 Complete. Output written to: ${OUTPUT_MJML_STYLE_PATH}`);
+        console.log(`✅ Step 5 Complete. Output written to: ${OUTPUT_MJML_STYLE_PATH}`);
 
     } catch (error) {
         console.error(`\n--- SCRIPT FAILED ---`);
