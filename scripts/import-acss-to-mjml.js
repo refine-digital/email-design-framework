@@ -1,3 +1,7 @@
+// import-acss-to-mjml.js
+// Version: 0.1.1
+// Description: Processes CSS and framework definitions to generate MJML classes.
+
 const fs = require('fs');
 const path = require('path');
 const postcss = require('postcss');

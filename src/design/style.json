@@ -1,6 +1,8 @@
 {
     "import_config": {
         "categories": [
+            "layout",
+            "spacing",
             "typography",
             "background",
             "button-link",
@@ -11,19 +13,8 @@
             "accessibility",
             "color"
         ],
-        "category_groups": {
-            "layout": [
-                "width",
-                "divider"
-            ],
-            "spacing": [
-                "spacing",
-                "padding",
-                "section padding",
-                "gutter",
-                "smart-spacing"
-            ]
-        },
-        "specific_classes": []
+        "specific_classes": [
+          ".radius"
+        ]
       }
   }
