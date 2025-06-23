@@ -6,11 +6,17 @@
     - The actual inbox preview text is controlled by the <mj-preview> tag in `design/_head.mjml`.
 -->
 <mj-wrapper mj-class="pre-header-wrapper" full-width="full-width">
+<!-- A wrapper by default is a div. A full-width wrapper adds a table ouside the div -->
   <mj-section mj-class="pre-header-section">
-    <mj-column>
-      <mj-text css-class="">
+    <mj-column mj-class="pre-header-column">
+      <mj-text mj-class="text--dark h--1">
         The PRE-HEADER here
       </mj-text>
     </mj-column>
   </mj-section>
 </mj-wrapper>
+<!-- mjml-render -->
+<!-- mj-head-render
+  <mj-include path="../../design/style.mjml" />
+  <mj-include path="../../design/my-style.mjml" />
+-->

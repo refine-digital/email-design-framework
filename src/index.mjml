@@ -15,6 +15,7 @@
 <mjml lang="und" dir="auto" owa="none">
   <mj-head>
     <mj-include path="./design/_head.mjml" />
+    <mj-include path="./design/my-style.mjml" />
     <mj-include path="./design/_classes.mjml" />
   </mj-head>
   <!--
@@ -29,7 +30,7 @@
     Notes:
       - None
   -->
-  <mj-body css-class="content" background-color="#ffffff">
+  <mj-body css-class="content">
     <!-- Pre-header Section -->
     <mj-include path="./components/pre/_pre.mjml" />
 
