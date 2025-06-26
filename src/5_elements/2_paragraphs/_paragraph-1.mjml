@@ -1,0 +1,16 @@
+<!--
+  Elements: _paragraph-1.mjml
+  Description:
+  Notes:
+    - None.
+-->
+<mj-text mj-class="paragraphs paragraph-1">
+  <p>Paragraph Text Here - mj-class="paragraphs paragraph-1"</p>
+</mj-text>
+<!-- mjml-render -->
+<!-- mj-head-render
+  <mj-include path="../../2_designs/_attributes.mjml" />
+  <mj-include path="../../2_designs/_classes.mjml" />
+  <mj-include path="../../2_designs/style.mjml" />
+  <mj-include path="../../2_designs/style-custom.mjml" />
+-->

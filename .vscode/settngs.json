@@ -1,23 +1,58 @@
-  {
-    // General VS Code settings
-    "editor.formatOnSave": true,       // Ensures your code is formatted when you save the file
-    "editor.tabSize": 2,               // Sets the tab size to 2 spaces for consistent indentation
-    "files.autoSave": "onFocusChange", // Automatically saves files when you switch away from them
+{
+  // General VS Code settings
+  "editor.formatOnSave": true,       // Ensures your code is formatted when you save the file
+  "editor.tabSize": 2,               // Sets the tab size to 2 spaces for consistent indentation
+  "files.autoSave": "onFocusChange", // Automatically saves files when you switch away from them
 
-    // MJML Extension specific settings for Daniel Knights' fork
-    "[mjml]": {
-      "editor.defaultFormatter": "mjmlio.vscode-mjml" // Sets the default formatter for MJML files
-    },
+  // MJML Extension specific settings for Daniel Knights' fork
+  "[mjml]": {
+    "editor.defaultFormatter": "mjmlio.vscode-mjml" // Sets the default formatter for MJML files
+  },
 
-    "mjml.autoPreview": true,                       // Automatically opens the MJML preview when an MJML file is opened
-    "mjml.switchOnSeparateFileChange": false,       // Keeps the preview focused on the main MJML file even when editing includes/partials
-    "mjml.snippetsInsideComments": false,           // Prevents snippets and completion items inside comments, as per the fork's details
-    "editor.linkedEditing": true,                   // Enables linked editing of HTML/MJML tag pairs, a useful feature of the fork
+  "mjml.autoPreview": true,                       // Automatically opens the MJML preview when an MJML file is opened
+  "mjml.switchOnSeparateFileChange": false,       // Keeps the preview focused on the main MJML file even when editing includes/partials
+  "mjml.snippetsInsideComments": false,           // Prevents snippets and completion items inside comments, as per the fork's details
+  "mjml.beautifyHtmlOutput":	true,	              // Beautify HTML output. (Works when mjml.minifyHtmlOutput aren't enabled.)
+  "mjml.beautify": {                              // Beautify options (available options).
+    "indent_size": 2, // Default: 4
+    "indent_char": " ",
+    "indent_with_tabs": false,
+    "editorconfig": false,
+    "eol": "\n",
+    "end_with_newline": false,
+    "indent_level": 0,
+    "preserve_newlines": true,
+    "max_preserve_newlines": 10,
+    "space_in_paren": false,
+    "space_in_empty_paren": false,
+    "jslint_happy": false,
+    "space_after_anon_function": false,
+    "space_after_named_function": false,
+    "brace_style": "collapse",
+    "unindent_chained_methods": false,
+    "break_chained_methods": false,
+    "keep_array_indentation": false,
+    "unescape_strings": false,
+    "wrap_line_length": 0,
+    "e4x": false,
+    "comma_first": false,
+    "operator_position": "before-newline",
+    "indent_empty_lines": false,
+    "templating": ["auto"]
+  },
+  "mjml.exportType": ".html",                     // Specifies the file type of the output file.
+  "mjml.lintEnable": true,	                      // Enable/disable MJML linter (requires restart).
+  "mjml.lintWhenTyping": true,	                  // Whether the linter is run on type or on save.
+  "mjml.minifyHtmlOutput": true,                  // Minify HTML output.
+  "mjml.preserveFocus":	true,	                    // Preserve focus of Text Editor after preview open.
+  "mjml.updateWhenTyping": true,	                // Update preview when typing.
+  "mjml.previewBackgroundColor": "#fff",          // Preview background color.
+  "mjml.autoClosePreview": true,                  //	Automatically close preview when all open MJML documents have been closed.
+  "mjml.showSaveDialog":	false,                  //	Show the save as dialog instead of input box.
 
-    // 
-    "diffEditor.ignoreTrimWhitespace": true, // Ignores whitespace changes at the end of lines
+  "editor.linkedEditing": true,                   // Enables linked editing of HTML/MJML tag pairs, a useful feature of the fork
+
+  //
+  "diffEditor.ignoreTrimWhitespace": true, // Ignores whitespace changes at the end of lines
   "diffEditor.renderWhitespace": "none"   // (Optional) Can also hide rendered whitespace characters
-}
-    // Git specific setting
-    // "git.enableCommitSigning": true                 // Enables GPG commit signing if you have it set up
 }

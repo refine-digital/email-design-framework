@@ -1,0 +1,16 @@
+<!--
+  Elements: _link-3.mjml
+  Description:
+  Notes:
+    - None.
+-->
+<mj-text mj-class="links link-3">
+    <a aria-label="HTML aria-label Link 3 Text Here" title="HTML Title Link 1 Text Here" href="#" target="_blank">Link 3 Text Here - mj-class="links link-3"</a>
+</mj-text>
+<!-- mjml-render -->
+<!-- mj-head-render
+  <mj-include path="../../2_designs/_attributes.mjml" />
+  <mj-include path="../../2_designs/_classes.mjml" />
+  <mj-include path="../../2_designs/style.mjml" />
+  <mj-include path="../../2_designs/style-custom.mjml" />
+-->

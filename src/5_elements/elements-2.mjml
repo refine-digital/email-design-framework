@@ -1,0 +1,112 @@
+<!--
+  Elements: elements-2.mjml
+  Description: An email with a all elements from style 1
+  Notes:
+    - None.
+-->
+<mj-section>
+  <mj-column>
+    <mj-include path="./1_headings/_heading-2.mjml" />
+  </mj-column>
+</mj-section>
+<mj-section>
+  <mj-column>
+    <mj-include path="./2_paragraphs/_paragraph-2.mjml" />
+  </mj-column>
+</mj-section>
+<mj-section>
+  <mj-column>
+    <mj-include path="./3_images/_image-2.mjml" />
+  </mj-column>
+</mj-section>
+<mj-section>
+  <mj-column>
+    <mj-include path="./4_links/_link-2.mjml" />
+  </mj-column>
+</mj-section>
+<mj-section>
+  <mj-column>
+    <mj-include path="./5_buttons/_button-2.mjml" />
+  </mj-column>
+</mj-section>
+<mj-section>
+  <mj-column>
+    <mj-include path="./6_dividers/_divider-2.mjml" />
+  </mj-column>
+</mj-section>
+<mj-section>
+  <mj-column>
+    <mj-include path="./7_tables/_table-2.mjml" />
+  </mj-column>
+</mj-section>
+<!---
+<mj-section>
+  <mj-column>
+    <mj-include path="./8_reserved/_reserved-2.mjml" />
+  </mj-column>
+</mj-section>
+<mj-section>
+  <mj-column>
+    <mj-include path="./9_reserved/_reserved-2.mjml" />
+  </mj-column>
+</mj-section>
+-->
+<mj-section>
+  <mj-column>
+    <mj-include path="./10_heroes/_hero-2.mjml" />
+  </mj-column>
+</mj-section>
+<mj-section>
+  <mj-column>
+    <mj-include path="./11_accordions/_accordion-2.mjml" />
+  </mj-column>
+</mj-section>
+<mj-section>
+  <mj-column>
+    <mj-include path="./12_carousels/_carousel-2.mjml" />
+  </mj-column>
+</mj-section>
+<mj-section>
+  <mj-column>
+    <mj-include path="./13_navbars/_navbar-2.mjml" />
+  </mj-column>
+</mj-section>
+<mj-section>
+  <mj-column>
+    <mj-include path="./14_socials/_social-2.mjml" />
+  </mj-column>
+</mj-section>
+<!--
+<mj-section>
+  <mj-column>
+    <mj-include path="./15_reserved/_reserved-2.mjml" />
+  </mj-column>
+</mj-section>
+<mj-section>
+  <mj-column>
+    <mj-include path="./16_reserved/_reserved-2.mjml" />
+  </mj-column>
+</mj-section>
+<mj-section>
+  <mj-column>
+    <mj-include path="./17_reserved/_reserved-2.mjml" />
+  </mj-column>
+</mj-section>
+<mj-section>
+  <mj-column>
+    <mj-include path="./18_reserved/_reserved-2.mjml" />
+  </mj-column>
+</mj-section>
+<mj-section>
+  <mj-column>
+    <mj-include path="./19_reserved/_reserved-2.mjml" />
+  </mj-column>
+</mj-section>
+-->
+<!-- mjml-render -->
+<!-- mj-head-render
+  <mj-include path="../../2_designs/_attributes.mjml" />
+  <mj-include path="../../2_designs/_classes.mjml" />
+  <mj-include path="../../2_designs/style.mjml" />
+  <mj-include path="../../2_designs/style-custom.mjml" />
+-->

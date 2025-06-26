@@ -1,11 +1,12 @@
 {
-  "name": "email-project-template",
+  "name": "email-design-framework",
   "version": "1.0.0",
   "scripts": {
-    "build": "mjml src/index.mjml -o dist/index.html && code dist/index.html",
-    "backup-and-build": "mkdir -p .backup/dist && cp -f dist/index.html ./.backup/dist/index.html 2>/dev/null || : && mjml src/index.mjml -o dist/index.html && code dist/index.html",
-    "compare-builds": "code --diff ./.backup/dist/index.html dist/index.html",
-    "import-styles-to-mjml": "node scripts/import-acss-to-mjml.js"
+    "Build Default ": "mjml src/1_emails/1_default/default.mjml -o dist/default.html && code dist/default.html",
+    "Build Elements ": "mjml src/1_emails/1_default/elements.mjml -o dist/elements.html && code dist/elements.html",
+    "Build Patterns ": "mjml src/1_emails/1_default/patterns.mjml -o dist/patterns.html && code dist/patterns.html",
+    "Build & Open Newsletter 1": "mjml src/1_emails/1_newsletters/newsletter-1.mjml -o dist/newsletter-1.html && code dist/newsletter-1.html",
+    "Import ACSS Styles": "node scripts/import-acss-to-mjml.js"
   },
   "devDependencies": {
     "mjml": "^4.0.0",

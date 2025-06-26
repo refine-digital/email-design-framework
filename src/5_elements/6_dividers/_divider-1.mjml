@@ -1,0 +1,50 @@
+<!--
+  Elements: _divider-1.mjml
+  Description:
+  Notes:
+    - None.
+-->
+
+<mj-divider mj-class="dividers divider-1" />
+
+<!-- mjml-render -->
+<!-- mj-head-render
+  <mj-include path="../../2_designs/_attributes.mjml" />
+  <mj-include path="../../2_designs/_classes.mjml" />
+  <mj-include path="../../2_designs/style.mjml" />
+  <mj-include path="../../2_designs/style-custom.mjml" />
+-->
+
+<!--
+  Element: <mj-divider>
+  Description: Displays a horizontal divider that can be customized like a HTML border.
+  Documentation: https://documentation.mjml.io/#mj-divider
+  All Attributes:
+    Attribute | Unit | Description | Default Value
+    align | string | left/right/center | center
+    border-color | color | divider color | #000000
+    border-style | string | dashed/dotted/solid | solid
+    border-width | px | divider's border width | 4px
+    container-background-color | color | inner element background color | n/a
+    css-class | string | class name |  added to the root HTML element created | n/a
+    padding | px | supports up to 4 parameters | 10px 25px
+    padding-bottom | px | bottom offset | n/a
+    padding-left | px | left offset | n/a
+    padding-right | px | right offset | n/a
+    padding-top | px | top offset | n/a
+    width | px/percent | divider width | 100%
+  Notes:
+    - Always provide descriptive `alt` text for accessibility and when images are blocked.
+    - Set `width` and `height` attributes to prevent layout shifts and ensure proper rendering in some clients.
+    - Images are `display: block;` by default in MJML's output to prevent extra spacing.
+
+  Default:
+  <mj-divider
+    align="center"
+    border-color="000000"
+    border-style="solid"
+    border-width="4px"
+    padding="10px 25px"
+    width="100%"
+  />
+-->

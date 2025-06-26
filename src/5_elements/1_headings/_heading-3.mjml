@@ -1,0 +1,21 @@
+<!--
+  Elements: _heading-3.mjml
+  Description:
+  Notes:
+    - None.
+-->
+<mj-text mj-class="headings heading-3">
+  <h1>H1 Headings Text Here - mj-class="headings heading-3"</h1>
+  <h2>H2 Headings Text Here - mj-class="headings heading-3"</h2>
+  <h3>H3 Headings Text Here - mj-class="headings heading-3"</h3>
+  <h4>H4 Headings Text Here - mj-class="headings heading-3"</h4>
+  <h5>H5 Headings Text Here - mj-class="headings heading-3"</h5>
+  <h6>H6 Headings Text Here - mj-class="headings heading-3"</h6>
+</mj-text>
+<!-- mjml-render -->
+<!-- mj-head-render
+  <mj-include path="../../2_designs/_attributes.mjml" />
+  <mj-include path="../../2_designs/_classes.mjml" />
+  <mj-include path="../../2_designs/style.mjml" />
+  <mj-include path="../../2_designs/style-custom.mjml" />
+-->

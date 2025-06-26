@@ -1,0 +1,130 @@
+<!--
+  Elements: _navbar-3.mjml
+  Description: Navbar with Hamburger Icon for Mobile
+  Notes:
+    - base-url required - ex. https://refine.digital/
+    - link href is relative to base url
+    - Placed inside mj-section/mj-column to center navbar and add contrast background colors
+-->
+<!--
+<mj-section mj-class="navbar-section navbar-section-3">
+  <mj-column  mj-class="navbar-column navbar-column-3">
+-->
+    <mj-navbar mj-class="navbars navbar-3" base-url="/" hamburger="hamburger">
+      <mj-navbar-link mj-class="navbar-link navbar-link-3" href="#one">Menu Item 1</mj-navbar-link>
+      <mj-navbar-link mj-class="navbar-link navbar-link-3" href="#two">Menu Item 2</mj-navbar-link>
+      <mj-navbar-link mj-class="navbar-link navbar-link-3" href="#three">Menu Item 3</mj-navbar-link>
+    </mj-navbar>
+<!--
+  </mj-column>
+</mj-section>
+-->
+<!-- mjml-render -->
+<!-- mj-head-render
+  <mj-include path="../../2_designs/_attributes.mjml" />
+  <mj-include path="../../2_designs/_classes.mjml" />
+  <mj-include path="../../2_designs/style.mjml" />
+  <mj-include path="../../2_designs/style-custom.mjml" />
+-->
+
+
+  <!--
+    Element: <mj-navbar>
+    Description: Displays a menu for navigation with an optional hamburger mode for mobile devices.
+    Documentation: https://documentation.mjml.io/#mj-navbar
+    Attributes:
+      Attribute | Unit | Description | Default Value
+      align | string | align content left/center/right | center
+      base url | string | base url for children components | n/a
+      css-class | string | class name, added to the root HTML element created | n/a
+      hamburger | string | activate the hamburger navigation on mobile if the value is hamburger | n/a
+      ico-align | string | hamburger icon alignment, left/center/right (hamburger mode required) | center
+      ico-close | ASCII code decimal | char code for a custom close icon (hamburger mode required) | 8855
+      ico-color | color format | hamburger icon color (hamburger mode required) | #000000
+      ico-font-family | string | hamburger icon font (only on hamburger mode) | Ubuntu, Helvetica, Arial, sans-serif
+      ico-font-size | px | hamburger icon size (hamburger mode required) | 30px
+      ico-line-height | px | hamburger icon line height (hamburger mode required) | 30px
+      ico-open | ASCII code decimal | char code for a custom open icon (hamburger mode required) | 9776
+      ico-padding | px | hamburger icon padding, supports up to 4 parameters (hamburger mode required) | 10px
+      ico-padding-bottom | px | hamburger icon bottom offset (hamburger mode required) | 10px
+      ico-padding-left | px | hamburger icon left offset (hamburger mode required) | 10px
+      ico-padding-right | px | hamburger icon right offset (hamburger mode required) | 10px
+      ico-padding-top | px | hamburger icon top offset (hamburger mode required) | 10px
+      ico-text-decoration | string | hamburger icon text decoration none/underline/overline/line-through (hamburger mode required) | none
+      ico-text-transform | string | hamburger icon text transformation none/capitalize/uppercase/lowercase (hamburger mode required) | none
+
+
+      base-url | string | base url for children components | n/a
+      css-class | string | class name, added to the root HTML element created | n/a
+      hamburger | string | activate the hamburger navigation on mobile if the value is hamburger | n/a
+      ico-text-decoration | string | hamburger icon text decoration none/underline/overline/line-through (hamburger mode required) | none
+      ico-text-transform | string | hamburger icon text transformation none/capitalize/uppercase/lowercase (hamburger mode required) | none
+
+    Notes:
+      - Provides a mobile-friendly navigation experience.
+      - Uses `<mj-navbar-link>` as its children for individual navigation items.
+      - The "hamburger" feature only work on mobile device with all iOS mail client, for others mail clients the render is performed on an normal way, the links are displayed inline and the hamburger is not visible.
+      - Individual links of the menu should be wrapped inside mj-navbar.
+      - All the attributes prefixed with ico- help to customize the hamburger icon. They only work with the hamburger mode enabled.
+
+    Default:
+      <mj-navbar
+        align="center"
+        ico-align="center"
+        ico-close="8855"
+        ico-color="#000000"
+        ico-font-family="Ubuntu, Helvetica, Arial, sans-serif"
+        ico-font-size="30px"
+        ico-line-height="30px"
+        ico-open="9776"
+        ico-padding="10px"
+        ico-padding-bottom="10px"
+        ico-padding-left="10px"
+        ico-padding-right="10px"
+        ico-padding-top="10px"
+        ico-text-decoration="none"
+        ico-text-transform="none"
+      />
+  -->
+
+<!--
+    Element: <mj-navbar-link>
+    Description: This component should be used to display an individual link in the navbar.
+    Documentation: https://documentation.mjml.io/#mj-navbar-link
+
+    Attributes:
+      Attribute | Unit | Description | Default Value
+      color | color | text color | #000000
+      css-class | string | class name, added to the root HTML element created | n/a
+      font-family | string | font | Ubuntu, Helvetica, Arial, sans-serif
+      font-size | px | text size | 13px
+      font-style | string | normal/italic/oblique | n/a
+      font-weight | number | text thickness | n/a
+      href | string | link to redirect to on click | n/a
+      letter-spacing | px,em | letter-spacing | n/a
+      line-height | px | space between the lines | 22px
+      padding | px | supports up to 4 parameters | 15px 10px
+      padding-bottom | px | bottom offset | n/a
+      padding-left | px | left offset | n/a
+      padding-right | px | right offset | n/a
+      padding-top | px | top offset | n/a
+      rel | string | specify the rel attribute | n/a
+      target | string | link target on click | n/a
+      text-decoration | string | underline/overline/none | n/a
+      text-transform | string | capitalize/uppercase/lowercase/none | uppercase
+
+    Notes:
+      - Must be a direct child of `<mj-navbar>`.
+      - The mj-navbar-link component must be used inside a mj-navbar component only.
+      - `mj-navbar-link` is an "ending tag", which means it can contain HTML code which will be left as it is, so it can contain HTML tags with attributes, but it cannot contain other MJML components.
+
+    Default:
+      <mj-navbar-link
+        color="#000000"
+        font-family="Ubuntu, Helvetica, Arial, sans-serif"
+        font-size="13px"
+        line-height="22px"
+        padding="15px 10px"
+        text-transform="uppercase"
+      />
+  -->

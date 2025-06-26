@@ -1,0 +1,17 @@
+<!--
+  Elements: _image-1.mjml
+  Description:
+  Notes:
+    - None.
+-->
+<mj-image
+  mj-class="images image-1"
+  src="https://placehold.co/600x400/eeeeee/333333.webp?text=mj-class+images+image-1"
+/>
+<!-- mjml-render -->
+<!-- mj-head-render
+  <mj-include path="../../2_designs/_attributes.mjml" />
+  <mj-include path="../../2_designs/_classes.mjml" />
+  <mj-include path="../../2_designs/style.mjml" />
+  <mj-include path="../../2_designs/style-custom.mjml" />
+-->

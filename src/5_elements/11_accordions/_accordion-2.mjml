@@ -1,0 +1,34 @@
+<!--
+  Elements: _accordion-2.mjml
+  Description:
+  Notes:
+    - Open/Close Icons not showing in Preview. Compiles fine.
+-->
+
+<mj-accordion mj-class="accordion accordion-2">
+  <mj-accordion-element mj-class="accordion-element accordion-element-2">
+    <mj-accordion-title mj-class="accordion-title accordion-title-2">
+      Accordion Title 2 - mj-class="accordion-title accordion-title-2
+    </mj-accordion-title>
+    <mj-accordion-text mj-class="accordion-text accordion-text-2">
+      Accordion Text 2 - mj-class="accordion-text accordion-text-2
+    </mj-accordion-text>
+  </mj-accordion-element>
+
+  <mj-accordion-element mj-class="accordion-element accordion-element-2">
+    <mj-accordion-title mj-class="accordion-title accordion-title-2">
+      Accordion Title 2 - mj-class="accordion-title accordion-title-2
+    </mj-accordion-title>
+    <mj-accordion-text mj-class="accordion-text accordion-text-2">
+      Accordion Text 2 - mj-class="accordion-text accordion-text-2
+    </mj-accordion-text>
+  </mj-accordion-element>
+</mj-accordion>
+
+<!-- mjml-render -->
+<!-- mj-head-render
+  <mj-include path="../../2_designs/_attributes.mjml" />
+  <mj-include path="../../2_designs/_classes.mjml" />
+  <mj-include path="../../2_designs/style.mjml" />
+  <mj-include path="../../2_designs/style-custom.mjml" />
+-->

@@ -1,0 +1,25 @@
+<!--
+  Designs: _footer-1.mjml
+  Description:
+  Notes:
+    - none.
+-->
+<mj-wrapper mj-class="footer-wrapper footer-1" full-width="full-width">
+<!-- A wrapper by default is a div. A full-width wrapper adds a table ouside the div -->
+  <mj-section mj-class="footer-section footer-1">
+    <mj-group mj-class="footer-group footer-1">
+      <mj-column mj-class="footer-column footer-1">
+        <mj-text mj-class="footer-text footer-1">
+          Footer 1 Text Here
+        </mj-text>
+      </mj-column>
+    </mj-group>
+  </mj-section>
+</mj-wrapper>
+<!-- mjml-render -->
+<!-- mj-head-render
+  <mj-include path="../designs/_attributes.mjml" />
+  <mj-include path="../designs/_classes.mjml" />
+  <mj-include path="../designs/style.mjml" />
+  <mj-include path="../designs/style-custom.mjml" />
+-->

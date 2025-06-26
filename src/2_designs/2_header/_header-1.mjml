@@ -1,0 +1,26 @@
+<!--
+  Designs: _header-1.mjml
+  Description:
+  Notes:
+    - None.
+-->
+<mj-wrapper mj-class="header-wrapper header-1" full-width="full-width">
+<!-- A wrapper by default is a div. A full-width wrapper adds a table ouside the div -->
+  <mj-section mj-class="header-section header-1">
+    <mj-group mj-class="header-group header-1">
+      <mj-column mj-class="header-column header-1">
+        <mj-text mj-class="header-text header-1">
+          <h1>H1 Header Text Here</h1>
+          <h2>H2 Header Text Here</h2>
+        </mj-text>
+      </mj-column>
+    </mj-group>
+  </mj-section>
+</mj-wrapper>
+<!-- mjml-render -->
+<!-- mj-head-render
+  <mj-include path="../designs/_attributes.mjml" />
+  <mj-include path="../designs/_classes.mjml" />
+  <mj-include path="../designs/style.mjml" />
+  <mj-include path="../designs/style-custom.mjml" />
+-->

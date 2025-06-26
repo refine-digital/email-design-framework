@@ -1,0 +1,81 @@
+<!--
+  Elements: _hero-2.mjml
+  Description:
+  Notes:
+    - None.
+-->
+
+<mj-hero mj-class="heroes hero-2" background-url="https://placehold.co/600x400/999999/888888/webp?text=Image">
+  <mj-text css-class="hero-text hero-text-2"
+    align="center"
+  >
+  Hero 2 - mj-class="heroes hero-2
+  </mj-text>
+  <mj-button mj-class="hero-button hero-button-2"
+    href="#">
+    BUTTON CTA - mj-class="heroes hero-button-2"
+  </mj-button>
+</mj-hero>
+
+<!-- mjml-render -->
+<!-- mj-head-render
+  <mj-include path="../../2_designs/_attributes.mjml" />
+  <mj-include path="../../2_designs/_classes.mjml" />
+  <mj-include path="../../2_designs/style.mjml" />
+  <mj-include path="../../2_designs/style-custom.mjml" />
+-->
+
+
+
+  <!--
+    Element: <mj-hero>
+    Description: This element displays a hero image.
+    Documentation: https://documentation.mjml.io/#mj-accordion
+    Notes:
+      - This element displays a hero image. It behaves like an mj-section with a single mj-column.
+    - background-height and background-width attributes are mandatory.
+
+    - It's best to use an image with width the same as the mj-body width (width="600px" by default). For better results, it's best to use an image with height the same or larger than the height of mj-hero.
+
+    - Use background-color to provide a fallback color in case an email client doesn't support background-url.
+  -->
+  <!--
+    Element: <mj-hero>
+    Description:
+    Documentation: https://documentation.mjml.io/#mj-hero
+
+    Attributes:
+    Attribute | Unit | Description | Default Value
+    background-color | color | hero background color | #ffffff
+    background-height | px | height of the image used |  mandatory | none
+    background-position | top/center/bottom left/center/right | background image position | center center
+    background-url | url | absolute background url | n/a
+    background-width | px | width of the image used |  mandatory | parent element width
+    border-radius | px | border radius | n/a
+    height | px | hero section height (required for fixed-height mode) | 0px
+    mode | fluid-height/fixed-height | choose if the height is fixed based on the height attribute or fluid | fluid-height
+    padding | px | supports up to 4 parameters | 0px
+    padding-bottom | px | bottom offset | 0px
+    padding-left | px | left offset | 0px
+    padding-right | px | right offset | 0px
+    padding-top | px | top offset | 0px
+    vertical-align | top/middle/bottom | content vertical alignment | top
+
+    Notes:
+    -
+
+    Default:
+      <mj-hero
+        background-color="#ffffff"
+        background-height="none"
+        background-position="center center"
+        height="0px"
+        mode="fluid-height"
+        padding="0px"
+        padding-bottom="0px"
+        padding-left="0px"
+        padding-right="0px"
+        padding-top="0px"
+        vertical-align="top"
+      />
+  -->

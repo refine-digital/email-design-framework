@@ -1,0 +1,228 @@
+<!--
+  Emails: elements.mjml
+  Description: An email with all elements presented
+  Notes:
+    - None.
+-->
+
+<!--
+    Element: <mjml>
+    Description: A MJML document starts with a <mjml> tag, it can contain only mj-head and mj-body tags. Both have the same purpose of head and body in a HTML document.
+    Documentation: https://documentation.mjml.io/#mjml
+    Additional Attributes:
+      Attribute | Unit | Description | Default Value
+      owa | string | if set to "desktop", switch force desktop version for older (self-hosted) version of Outlook.com that doesn't support media queries (cf. this issue) | none
+      lang | string | used as <html lang=""> attribute | und
+      dir | string | used as <html dir=""> attribute | auto
+    Notes:
+      - Use for universal font-family, color, or padding defaults across the entire email.
+      - Attributes defined on specific components (e.g., <mj-text>) or `mj-class` will override `mj-all`.
+-->
+<mjml lang="und" dir="auto" owa="none">
+  <mj-head>
+    <mj-include path="../../2_designs/_attributes.mjml" />    <!-- Default Attributes Settings -->
+    <mj-include path="../../2_designs/_classes.mjml" />       <!-- Standard Classes -->
+    <mj-include path="../../2_designs/style.mjml" />          <!-- Standard Styles -->
+    <mj-include path="../../2_designs/style-custom.mjml" />   <!-- Custom Styles -->
+  </mj-head>
+  <!--
+    Element: <mj-body>
+    Description: This is the starting point of your email.
+    Documentation: https://documentation.mjml.io/#mj-body
+    Additional Attributes:
+      Attribute | Unit | Description | Default Value
+      background-color | color formats | the general background color | n/a
+      css-class | string | class name, added to the root HTML element created | n/a
+      width | px | email's width | 600px
+    Notes:
+      - None
+  -->
+  <mj-body css-class="content" background-color="#fff">
+
+    <!-- Headings Section -->
+    <mj-section>
+      <mj-column>
+        <mj-text><h3>## HEADINGS ##</h3></mj-text>
+        <mj-include path="../../5_elements/1_headings/_heading-1.mjml" />
+        <mj-include path="../../5_elements/1_headings/_heading-2.mjml" />
+        <mj-include path="../../5_elements/1_headings/_heading-3.mjml" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-divider />
+      </mj-column>
+    </mj-section>
+
+    <!-- Paragraphs Section -->
+    <mj-section>
+      <mj-column>
+        <mj-text><h3>## PARAGRAPHS ##</h3></mj-text>
+        <mj-include path="../../5_elements/2_paragraphs/_paragraph-1.mjml" />
+        <mj-include path="../../5_elements/2_paragraphs/_paragraph-2.mjml" />
+        <mj-include path="../../5_elements/2_paragraphs/_paragraph-3.mjml" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-divider />
+      </mj-column>
+    </mj-section>
+
+    <!-- Images Section -->
+    <mj-section>
+      <mj-column>
+        <mj-text><h3>## IMAGES ##</h3></mj-text>
+        <mj-include path="../../5_elements/3_images/_image-1.mjml" />
+        <mj-include path="../../5_elements/3_images/_image-2.mjml" />
+        <mj-include path="../../5_elements/3_images/_image-3.mjml" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-divider />
+      </mj-column>
+    </mj-section>
+
+    <!-- Links Section -->
+    <mj-section>
+      <mj-column>
+        <mj-text><h3>## LINKS ##</h3></mj-text>
+        <mj-include path="../../5_elements/4_links/_link-1.mjml" />
+        <mj-include path="../../5_elements/4_links/_link-2.mjml" />
+        <mj-include path="../../5_elements/4_links/_link-3.mjml" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-divider />
+      </mj-column>
+    </mj-section>
+
+    <!-- Buttons Section -->
+    <mj-section>
+      <mj-column>
+        <mj-text><h3>## BUTTONS ##</h3></mj-text>
+        <mj-include path="../../5_elements/5_buttons/_button-1.mjml" />
+        <mj-include path="../../5_elements/5_buttons/_button-2.mjml" />
+        <mj-include path="../../5_elements/5_buttons/_button-3.mjml" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-divider />
+      </mj-column>
+    </mj-section>
+
+    <!-- Dividers Section -->
+    <mj-section>
+      <mj-column>
+        <mj-text><h3>## DIVIDERS ##</h3></mj-text>
+        <mj-include path="../../5_elements/6_dividers/_divider-1.mjml" />
+        <mj-include path="../../5_elements/6_dividers/_divider-2.mjml" />
+        <mj-include path="../../5_elements/6_dividers/_divider-3.mjml" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-divider />
+      </mj-column>
+    </mj-section>
+
+    <!-- Tables Section -->
+    <mj-section>
+      <mj-column>
+        <mj-text><h3>## TABLES ##</h3></mj-text>
+        <mj-include path="../../5_elements/7_tables/_table-1.mjml" />
+        <mj-include path="../../5_elements/7_tables/_table-2.mjml" />
+        <mj-include path="../../5_elements/7_tables/_table-3.mjml" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-divider />
+      </mj-column>
+    </mj-section>
+
+    <!-- Heroes Section -->
+    <mj-section>
+      <mj-column>
+        <mj-text><h3>## HEROES ##</h3></mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-include path="../../5_elements/10_heroes/_hero-1.mjml" />
+    <mj-include path="../../5_elements/10_heroes/_hero-2.mjml" />
+    <mj-include path="../../5_elements/10_heroes/_hero-3.mjml" />
+
+    <mj-section>
+      <mj-column>
+        <mj-divider />
+      </mj-column>
+    </mj-section>
+
+    <!-- Accordions Section -->
+    <mj-section>
+      <mj-column>
+        <mj-text><h3>## ACCORDIONS ##</h3></mj-text>
+        <mj-include path="../../5_elements/11_accordions/_accordion-1.mjml" />
+        <mj-include path="../../5_elements/11_accordions/_accordion-2.mjml" />
+        <mj-include path="../../5_elements/11_accordions/_accordion-3.mjml" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-divider />
+      </mj-column>
+    </mj-section>
+
+    <!-- Carousels Section -->
+    <mj-section>
+      <mj-column>
+        <mj-text><h3>## CAROUSELS ##</h3></mj-text>
+        <mj-include path="../../5_elements/12_carousels/_carousel-1.mjml" />
+        <mj-include path="../../5_elements/12_carousels/_carousel-2.mjml" />
+        <mj-include path="../../5_elements/12_carousels/_carousel-3.mjml" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-divider />
+      </mj-column>
+    </mj-section>
+
+    <!-- Navbars Section -->
+    <mj-section>
+      <mj-column>
+        <mj-text><h3>## NAVBARS ##</h3></mj-text>
+        <mj-include path="../../5_elements/13_navbars/_navbar-1.mjml" />
+        <mj-include path="../../5_elements/13_navbars/_navbar-2.mjml" />
+        <mj-include path="../../5_elements/13_navbars/_navbar-3.mjml" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-divider />
+      </mj-column>
+    </mj-section>
+
+    <!-- Socials Section -->
+    <mj-section>
+      <mj-column>
+        <mj-text><h3>## SOCIALS ##</h3></mj-text>
+        <mj-include path="../../5_elements/14_socials/_social-1.mjml" />
+        <mj-include path="../../5_elements/14_socials/_social-2.mjml" />
+        <mj-include path="../../5_elements/14_socials/_social-3.mjml" />
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

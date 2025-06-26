@@ -1,0 +1,83 @@
+<!-- File:_classes.mjml -->
+<!--
+  Element: <mj-class>
+  Description: Defines reusable sets of attributes that can be applied to any MJML component using the `mj-class` attribute.
+  Documentation: https://documentation.mjml.io/#mj-class
+  Notes:
+    - Excellent for creating a design system and reducing repetitive code.
+    - Acts like a CSS class for MJML attributes.
+    - Can be overridden by inline attributes on the component itself.
+  Example:
+    <mj-class name="blue" color="blue" />
+    <mj-class name="big" font-size="20px" />
+-->
+<mj-attributes>
+  <mj-class
+    name="top-wrapper"
+  />
+  <mj-class
+    name="top-section"
+  />
+  <mj-class
+    name="top-group"
+  />
+  <mj-class
+    name="top-column"
+  />
+
+  <mj-class
+    name="header-wrapper"
+  />
+  <mj-class
+    name="header-section"
+  />
+  <mj-class
+    name="header-group"
+  />
+  <mj-class
+    name="header-column"
+  />
+
+  <mj-class
+    name="body-wrapper"
+  />
+  <mj-class
+    name="body-section"
+  />
+  <mj-class
+    name="body-group"
+  />
+  <mj-class
+    name="body-column"
+  />
+
+  <mj-class
+    name="footer-wrapper"
+  />
+  <mj-class
+    name="footer-section"
+  />
+  <mj-class
+    name="footer-group"
+  />
+  <mj-class
+    name="footer-column"
+  />
+
+  <mj-class
+    name="bottom-wrapper"
+  />
+  <mj-class
+    name="bottom-section"
+  />
+  <mj-class
+    name="bottom-group"
+  />
+  <mj-class
+    name="bottom-column"
+  />
+
+</mj-attributes>
+
+<!-- Import any ACSS classes -->
+<mj-include path="./style.mjml" />

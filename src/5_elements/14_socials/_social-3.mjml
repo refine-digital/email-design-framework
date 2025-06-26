@@ -1,0 +1,234 @@
+<!--
+  Elements: social-3.mjml
+  Description: Default horizontal list of social icons (bold)
+
+  Notes:
+    - Add / Remove the Social Links to your preference
+    - Email could alt link to webpage with a form
+    - Add mode="vertical" to mj-social if you prefer vertical rendering
+-->
+
+<mj-social mj-class="socials social-3">
+    <!-- Facebook -->
+    <mj-social-element
+      mj-class="social-element social-element-3 social-facebook"
+      src="https://refine.digital/wp-content/uploads/icons/bold/facebook-logo-bold.png"
+      href="https://facebook.com/#"
+      alt="Facebook icon with link to our page"
+      title="Visit our Facebook page"
+    >Facebook</mj-social-element>
+
+    <!-- Youtube -->
+    <mj-social-element
+      mj-class="social-element social-element-3 social-youtube"
+      src="https://refine.digital/wp-content/uploads/icons/bold/youtube-logo-bold.png"
+      href="https://youtube.com/channel/#"
+      alt="Youtube icon with link to our page"
+      title="Visit our Youtube channel"
+    >Youtube</mj-social-element>
+
+    <!-- Instagram -->
+    <mj-social-element
+      mj-class="social-element social-element-3 social-instagram"
+      src="https://refine.digital/wp-content/uploads/icons/bold/instagram-logo-bold.png"
+      href="https://instagram.com/#"
+      alt="Instagram icon with link to our page"
+      title="Visit our Instagram page"
+    >Instagram</mj-social-element>
+
+    <!-- X -->
+    <mj-social-element
+      mj-class="social-element social-element-3 social-x"
+      src="https://refine.digital/wp-content/uploads/icons/bold/x-logo-bold.png"
+      href="https://x.com/#"
+      alt="X icon with link to our page"
+      title="Visit our X page"
+    >X</mj-social-element>
+
+    <!-- Pinterest -->
+    <mj-social-element
+      mj-class="social-element social-element-3 social-pinterest"
+      src="https://refine.digital/wp-content/uploads/icons/bold/pinterest-logo-bold.png"
+      href="https://pinterest.com/#"
+      alt="Pinterest icon with link to our page"
+      title="Visit our Pinterest page"
+    >Pinterest</mj-social-element>
+
+    <!-- Linkedin -->
+    <mj-social-element
+      mj-class="social-element social-element-3 social-linkedin"
+      src="https://refine.digital/wp-content/uploads/icons/bold/linkedin-logo-bold.png"
+      href="https://linkedin.com/#"
+      alt="Linkedin icon with link to our page"
+      title="Visit our Linkedin page"
+    >Linkedin</mj-social-element>
+
+    <!-- Snapchat -->
+    <mj-social-element
+      mj-class="social-element social-element-3 social-snapchat"
+      src="https://refine.digital/wp-content/uploads/icons/bold/snapchat-logo-bold.png"
+      href="https://snapchat.com/#"
+      alt="Snapchat icon with link to our page"
+      title="Visit our Snapchat page"
+    >Snapchat</mj-social-element>
+
+    <!-- Website -->
+    <mj-social-element
+      mj-class="social-element social-element-3 social-website"
+      src="https://refine.digital/wp-content/uploads/icons/bold/globe-bold.png"
+      href="https://refine.digital/#"
+      alt="Website icon with link to our page"
+      title="Visit our Wesbite"
+    >Website</mj-social-element>
+
+    <!-- Email -->
+    <mj-social-element
+      mj-class="social-element social-element-3 social-email"
+      src="https://refine.digital/wp-content/uploads/icons/bold/envelope-bold.png"
+      href="mailto:people@refine.digital"
+      alt="Email icon with link to send us a message"
+      title="Send us a message"
+    >Email</mj-social-element>
+
+</mj-social>
+<!-- mjml-render -->
+<!-- mj-head-render
+  <mj-include path="../../2_designs/_attributes.mjml" />
+  <mj-include path="../../2_designs/_classes.mjml" />
+  <mj-include path="../../2_designs/style.mjml" />
+  <mj-include path="../../2_designs/style-custom.mjml" />
+-->
+
+
+  <!--
+    Element: <mj-social>
+    Description: Displays calls-to-action for various social networks with their associated logo. You can add social networks with the mj-social-element tag.
+    Documentation: https://documentation.mjml.io/#mj-social
+    Attributes:
+      Attribute | Unit | Description | Default Value
+      align | string | left/right/center | center
+      border-radius | px | border radius | 3px
+      color | color | text color | #333333
+      css-class | string | class name, added to the root HTML element created | n/a
+      container-background-color | color | inner element background color | n/a
+      font-family | string | font name | Ubuntu, Helvetica, Arial, sans-serif
+      font-size | px/em | font size | 13px
+      font-style | string | font style | normal
+      font-weight | string | font weight | normal
+      icon-height | percent/px | icon height, overrides icon-size | icon-size
+      icon-size | percent/px | icon size (width and height) | 20px
+      inner-padding | px | social network surrounding padding | 4px
+      line-height | percent/px | space between lines | 22px
+      mode | string | vertical/horizontal | horizontal
+      padding | px | supports up to 4 parameters | 10px 25px
+      padding-bottom | px | bottom offset | n/a
+      padding-left | px | left offset | n/a
+      padding-right | px | right offset | n/a
+      padding-top | px | top offset | n/a
+      icon-padding | px | padding around the icons | 0px
+      text-padding | px | padding around the texts | 4px 4px 4px 0
+      text-decoration | string | underline/overline/none | none
+
+    Notes:
+      - Automatically generates responsive social icons with good client compatibility.
+      - Uses `<mj-social-element>` children to define individual social links.
+      - `mode="horizontal"` or `"vertical"` controls layout.
+      - Compiler note: `target="_blank"` might be the effective default due to browser/client behavior for links, even if not explicitly documented for `mj-social` itself.
+      - `mj-social-element`'s `name` attribute is a shortcut for some common social elements. You should avoid rely too much on this as those icons are hosted by Mailjet for their Email Builder. Use custom element syntax instead.
+      - `mj-social-element` is an "ending tag", which means it can contain HTML code which will be left as it is, so it can contain HTML tags with attributes, but it cannot contain other MJML components.
+
+    Default:
+      <mj-social
+        align="center"
+        border-radius="3px"
+        color="#333333"
+        font-family="Ubuntu, Helvetica, Arial, sans-serif"
+        font-size="13px"
+        font-style="normal"
+        font-weight="normal"
+        icon-size="20px"
+        inner-padding="4px"
+        line-height="22px"
+        mode="horizontal"
+        padding="10px 25px"
+        icon-padding="0px"
+        text-padding="4px 4px 4px 0"
+        text-decoration="none"
+      />
+-->
+
+<!--
+    Element: <mj-social-element>
+    Description: This component enables you to display a given social network inside mj-social.
+    Documentation: https://documentation.mjml.io/#mj-social-element
+
+    Attributes:
+      Attribute | Unit | Description | Default Value
+      align | string | left/right/center | center
+      alt | string | image alt attribute | ''
+      background-color | color | icon color | Each social name has its own default
+      border-radius | px | border radius | 3px
+      color | color | text color | #333333
+      css-class | string | class name, added to the root HTML element created | n/a
+      font-family | string | font name | Ubuntu, Helvetica, Arial, sans-serif
+      font-size | px/em | font size | 13px
+      font-style | string | font style | normal
+      font-weight | string | font weight | normal
+      href | url | button redirection url | none
+      icon-height | percent/px | icon height, overrides icon-size | icon-size
+      icon-size | percent/px | icon size (width and height) | 20px
+      line-height | percent/px | space between lines | 22px
+      name | string | social network name, see supported list below | N/A
+      padding | px | supports up to 4 parameters | 4px
+      padding-bottom | px | bottom offset | n/a
+      padding-left | px | left offset | n/a
+      padding-right | px | right offset | n/a
+      padding-top | px | top offset | n/a
+      icon-padding | px | padding around the icon | 0px
+      icon-position | string | left/right | right
+      text-padding | px | padding around the text | 4px 4px 4px 0
+      sizes | media query & width | set icon width based on query | n/a
+      src | url | image source | Each social name has its own default
+      srcset | url & width | set a different image source based on the viewport | n/a
+      rel | string | specify the rel attribute for the link | n/a
+      target | string | link target | _blank
+      title | string | img title attribute | none
+      text-decoration | string | underline/overline/none | none
+      vertical-align | string | top/middle/bottom | middle
+
+      Notes:
+      - Must be a direct child of `<mj-social>`.
+      - Note that default icons are transparent, which allows background-color to actually be the icon color.
+      - `name` attribute automatically selects predefined icon and background color, but can be overridden.
+      - `src` can be used for custom icons.
+      - Compiler note: `icon-position` default is `left` in docs, but might require explicit setting for consistent rendering across environments.
+      - Supported networks with a share url: - facebook - twitter - x - google - pinterest - linkedin - tumblr - xing
+        Without a share url: - github - instagram - web - snapchat - youtube - vimeo - medium - soundcloud - dribbble
+        When using a network with share url, the href attribute will be inserted in the share url (i.e. https://www.facebook.com/sharer/sharer.php?u=[[URL]]). To keep your href unchanged, add -noshare to the network name. Example :
+        <mj-social-element name="twitter-noshare" href="my-unchanged-url">Twitter</mj-social-element>
+      - You can also use mj-social this way with no href attribute to make a simple list of inlined images-texts.
+        Example:
+        <mj-social-element href="url" background-color="#FF00FF" src="path-to-your-icon">
+          Optional label
+        </mj-social-element>
+
+    Default:
+      <mj-social-element
+        align="center"
+        alt=""
+        border-radius="3px"
+        color="#333333"
+        font-family="Ubuntu, Helvetica, Arial, sans-serif"
+        font-size="13px"
+        font-style="normal"
+        font-weight="normal"
+        icon-size="20px"
+        icon-padding="0px"
+        line-height="22px"
+        padding="4px"
+        src=""
+        target="_blank"
+        text-padding="4px 4px 4px 0"
+        vertical-align="middle"
+      />
+-->

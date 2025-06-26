@@ -1,0 +1,51 @@
+<!-- file:newsletter-1.mjml -->
+<!--
+    Element: <mjml>
+    Description: A MJML document starts with a <mjml> tag, it can contain only mj-head and mj-body tags. Both have the same purpose of head and body in a HTML document.
+    Documentation: https://documentation.mjml.io/#mjml
+    Additional Attributes:
+      Attribute | Unit | Description | Default Value
+      owa | string | if set to "desktop", switch force desktop version for older (self-hosted) version of Outlook.com that doesn't support media queries (cf. this issue) | none
+      lang | string | used as <html lang=""> attribute | und
+      dir | string | used as <html dir=""> attribute | auto
+    Notes:
+      - Use for universal font-family, color, or padding defaults across the entire email.
+      - Attributes defined on specific components (e.g., <mj-text>) or `mj-class` will override `mj-all`.
+      - lang attribute follows standard ISO 639-1
+-->
+<mjml lang="en" dir="ltr" owa="none">
+  <mj-head>
+    <mj-include path="../../designs/_attributes.mjml" />    <!-- Default Attributes Settings -->
+    <mj-include path="../../designs/_classes.mjml" />       <!-- Standard Classes -->
+    <mj-include path="../../designs/style.mjml" />          <!-- Standard Styles -->
+    <mj-include path="../../designs/style-custom.mjml" />   <!-- Custom Styles -->
+  </mj-head>
+  <!--
+    Element: <mj-body>
+    Description: This is the starting point of your email.
+    Documentation: https://documentation.mjml.io/#mj-body
+    Additional Attributes:
+      Attribute | Unit | Description | Default Value
+      background-color | color formats | the general background color | n/a
+      css-class | string | class name, added to the root HTML element created | n/a
+      width | px | email's width | 600px
+    Notes:
+      - None
+  -->
+  <mj-body css-class="content" background-color="#fff">
+    <!-- Top Section -->
+    <mj-include path="./designs/1_top/_top-1.mjml" />
+
+    <!-- Header Section -->
+    <mj-include path="./designs/2_header/_header-1.mjml" />
+
+    <!-- Body Section -->
+    <mj-include path="./designs/3_body/_body-1.mjml" />
+
+    <!-- Footer Section -->
+    <mj-include path="./designs/4_footer/_footer-1.mjml" />
+
+    <!-- Bottom Section -->
+    <mj-include path="./designs/5_bottom/_bottom-1.mjml" />
+  </mj-body>
+</mjml>

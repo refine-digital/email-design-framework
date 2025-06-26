@@ -1,0 +1,514 @@
+<!-- my.style.mjml -->
+<!-- Description: Enables style overrides and debugging element boundaries -->
+
+<mj-attributes>
+    <!-- Classes -->
+
+    <!-- Elements -->
+
+    <!-- Headings -->
+    <mj-class
+        name="headings"
+    />
+    <mj-class
+        name="heading-1"
+    />
+    <mj-class
+        name="heading-3"
+    />
+    <mj-class
+        name="heading-3"
+    />
+
+    <!-- Paragraphs -->
+    <mj-class
+        name="paragraphs"
+    />
+    <mj-class
+        name="paragraph-1"
+    />
+    <mj-class
+        name="paragraph-2"
+    />
+    <mj-class
+        name="paragraph-3"
+    />
+
+    <!-- Images -->
+    <mj-class
+        name="images"
+    />
+    <mj-class
+        name="image-1"
+    />
+    <mj-class
+        name="image-2"
+    />
+    <mj-class
+        name="image-3"
+    />
+
+    <!-- Links -->
+    <mj-class
+        name="links"
+    />
+    <mj-class
+        name="link-1"
+    />
+    <mj-class
+        name="link-2"
+    />
+    <mj-class
+        name="link-3"
+    />
+
+    <!-- Buttons -->
+    <mj-class
+        name="buttons"
+    />
+    <mj-class
+        name="button-1"
+    />
+    <mj-class
+        name="button-2"
+    />
+    <mj-class
+        name="button-3"
+    />
+
+    <!-- Dividers -->
+    <mj-class
+        name="dividers"
+    />
+    <mj-class
+        name="divider-1"
+    />
+    <mj-class
+        name="divider-2"
+    />
+    <mj-class
+        name="divider-3"
+    />
+
+    <!-- Tables -->
+    <mj-class
+        name="tables"
+    />
+    <mj-class
+        name="table-1"
+    />
+    <mj-class
+        name="table-2"
+    />
+    <mj-class
+        name="table-3"
+    />
+
+    <!-- Reserved 8 -->
+    <mj-class
+        name="reserved-8"
+    />
+    <mj-class
+        name="reserved-8-1"
+    />
+    <mj-class
+        name="reserved-8-2"
+    />
+    <mj-class
+        name="reserved-8-3"
+    />
+
+    <!-- Reserved 9 -->
+    <mj-class
+        name="reserved-9"
+    />
+    <mj-class
+        name="reserved-9-1"
+    />
+    <mj-class
+        name="reserved-9-2"
+    />
+    <mj-class
+        name="reserved-9-3"
+    />
+
+    <!-- Heroes -->
+    <mj-class
+        name="heroes"
+    />
+        <mj-class
+            name="hero-text"
+        />
+        <mj-class
+            name="hero-button"
+        />
+
+    <mj-class
+        name="hero-1"
+    />
+        <mj-class
+            name="hero-text-1"
+        />
+        <mj-class
+            name="hero-button-1"
+        />
+
+    <mj-class
+        name="hero-2"
+    />
+        <mj-class
+            name="hero-text-2"
+        />
+        <mj-class
+            name="hero-button-2"
+        />
+
+    <mj-class
+        name="hero-3"
+    />
+        <mj-class
+            name="hero-text-3"
+        />
+        <mj-class
+            name="hero-button-3"
+        />
+
+    <!-- Accordions -->
+    <mj-class
+        name="accordions"
+    />
+        <mj-class
+            name="accordion-element"
+        />
+            <mj-class
+                name="accordion-title"
+            />
+            <mj-class
+                name="accordion-text"
+            />
+
+
+    <mj-class
+        name="accordion-1"
+    />
+        <mj-class
+            name="accordion-element-1"
+        />
+            <mj-class
+                name="accordion-title-1"
+            />
+            <mj-class
+                name="accordion-text-1"
+            />
+
+    <mj-class
+        name="accordion-2"
+    />
+        <mj-class
+            name="accordion-element-2"
+        />
+            <mj-class
+                name="accordion-title-2"
+            />
+            <mj-class
+                name="accordion-text-2"
+            />
+
+    <mj-class
+        name="accordion-3"
+    />
+        <mj-class
+            name="accordion-element-3"
+        />
+            <mj-class
+                name="accordion-title-3"
+            />
+            <mj-class
+                name="accordion-text-3"
+            />
+
+    <!-- Carousels -->
+    <mj-class
+        name="carousels"
+    />
+    <mj-class
+        name="carousel-1"
+    />
+    <mj-class
+        name="carousel-2"
+    />
+    <mj-class
+        name="carousel-3"
+    />
+        <mj-class
+            name="carousel-image"
+        />
+        <mj-class
+            name="carousel-image-1"
+        />
+        <mj-class
+            name="carousel-image-2"
+        />
+        <mj-class
+            name="carousel-image-3"
+        />
+
+    <!-- Navbars -->
+    <mj-class
+        name="navbars"
+    />
+    <mj-class
+        name="navbar-1"
+    />
+    <mj-class
+        name="navbar-2"
+    />
+    <mj-class
+        name="navbar-3"
+    />
+        <mj-class
+            name="navbar-link"
+        />
+        <mj-class
+            name="navbar-link-1"
+        />
+        <mj-class
+            name="navbar-link-2"
+        />
+        <mj-class
+            name="navbar-link-3"
+        />
+
+    <!-- Socials -->
+    <mj-class
+        name="socials"
+    />
+    <mj-class
+        name="social-1"
+    />
+    <mj-class
+        name="social-2"
+    />
+    <mj-class
+        name="social-3"
+    />
+        <mj-class
+            name="social-element"
+        />
+        <mj-class
+            name="social-element-1"
+        />
+        <mj-class
+            name="social-element-2"
+        />
+        <mj-class
+            name="social-element-3"
+        />
+            <mj-class
+                name="social-facebook"
+            />
+            <mj-class
+                name="social-youtube"
+            />
+            <mj-class
+                name="social-instagram"
+            />
+            <mj-class
+                name="social-x"
+            />
+            <mj-class
+                name="social-pinterest"
+            />
+            <mj-class
+                name="social-linkedin"
+            />
+            <mj-class
+                name="social-snapchat"
+            />
+            <mj-class
+                name="social-website"
+            />
+            <mj-class
+                name="social-email"
+            />
+
+    <!-- Reserved 15 -->
+    <mj-class
+        name="reserved-15"
+    />
+    <mj-class
+        name="reserved-15-1"
+    />
+    <mj-class
+        name="reserved-15-2"
+    />
+    <mj-class
+        name="reserved-15-3"
+    />
+
+    <!-- Reserved 16 -->
+    <mj-class
+        name="reserved-16"
+    />
+    <mj-class
+        name="reserved-16-1"
+    />
+    <mj-class
+        name="reserved-16-2"
+    />
+    <mj-class
+        name="reserved-16-3"
+    />
+
+    <!-- Reserved 17 -->
+    <mj-class
+        name="reserved-17"
+    />
+    <mj-class
+        name="reserved-17-1"
+    />
+    <mj-class
+        name="reserved-17-2"
+    />
+    <mj-class
+        name="reserved-17-3"
+    />
+
+    <!-- Reserved 18 -->
+    <mj-class
+        name="reserved-18"
+    />
+    <mj-class
+        name="reserved-18-1"
+    />
+    <mj-class
+        name="reserved-18-2"
+    />
+    <mj-class
+        name="reserved-18-3"
+    />
+
+    <!-- Reserved 19 -->
+    <mj-class
+        name="reserved-19"
+    />
+    <mj-class
+        name="reserved-19-1"
+    />
+    <mj-class
+        name="reserved-19-2"
+    />
+    <mj-class
+        name="reserved-19-3"
+    />
+
+
+    <mj-class
+        name="h--1"
+    />
+
+    <!-- Elements
+    <mj-body background-color="#fff"/>
+    <mj-section />
+    <mj-wrapper />
+    <mj-section />
+    <mj-group />
+    <mj-column />
+    <mj-raw />
+
+    <mj-spacer />
+    <mj-divider />
+    <mj-text />
+    <mj-image />
+    <mj-table />
+
+    <mj-hero />
+    <mj-social />
+    <mj-social-element />
+
+    <mj-carousel />
+    <mj-carousel-image />
+
+    <mj-accordion />
+    <mj-accordion-element />
+    <mj-accordion-title />
+    <mj-accordion-text />
+-->
+</mj-attributes>
+<!--
+    Debugging HTML Email Element Boundaries
+    - Uncomment to enable debugging using classes
+    - Debug using multiple colors on all structural elements
+    - Debug using single colors on all basic content elements
+    - Debug using multiple colors on all complex content elements
+
+<mj-style>
+    .debug {
+        border-style: dotted !important;
+        border-width: 1px !important;
+    }
+    .debug--all-red {
+        border-color: hsl(0, 100%, 50%)!important;
+        border-width: 2px !important;
+    }
+    .debug--wrapper-blue {
+        border-color: hsl(240, 100%, 50%)!important;
+    border-width: 2px !important;
+    }
+    .debug--section-green {
+        border-color: hsl(120, 100%, 50%)!important;
+    border-width: 2px !important;
+    }
+    .debug--group-dark-green {
+        border-color: hsl(120, 100%, 20%)!important;
+    border-width: 2px !important;
+    }
+    .debug--column-yellow {
+        border-color: hsl(60, 100%, 50%)!important;
+    border-width: 2px !important;
+    }
+    .debug--raw-grey {
+        border-color: hsl(0, 0%, 50%) !important;
+    border-width: 2px !important;
+    }
+    .debug--element-orange {
+        border-color: hsl(39, 100%, 50%)!important;
+        border-width: 1px !important;
+    }
+    .debug--element-purple {
+        border-color: hsl(300, 100%, 50%)!important;
+        border-width: 1px !important;
+    }
+    .debug--element-dark-purple {
+        border-color: hsl(300, 100%, 25%) !important;
+        border-width: 1px !important;
+    }
+</mj-style>
+
+<mj-attributes>
+    <mj-wrapper css-class="debug debug--wrapper-blue" />
+    <mj-section css-class="debug debug--section-green" />
+    <mj-group css-class="debug debug--group-dark-green" />
+    <mj-column css-class="debug debug--column-yellow" />
+    <mj-raw css-class="debug debug--raw-yellow" />
+
+    <mj-spacer css-class="debug debug--element-orange" />
+    <mj-divider css-class="debug debug--element-orange" />
+    <mj-text css-class="debug debug--element-orange" />
+    <mj-image css-class="debug debug--element-orange" />
+    <mj-table css-class="debug debug--element-orange" />
+
+    <mj-hero css-class="debug debug--element-purple" />
+    <mj-social css-class="debug debug--element-purple" />
+    <mj-social-element css-class="debug debug--element-dark-purple" />
+
+    <mj-carousel css-class="debug debug--element-purple" />
+    <mj-carousel-image css-class="debug debug--element-dark-purple" />
+
+    <mj-accordion css-class="debug debug--element-purple" />
+    <mj-accordion-element css-class="debug debug--element-dark-purple" />
+    <mj-accordion-title css-class="debug debug--element-purple" />
+    <mj-accordion-text css-class="debug debug--element-dark-purple" />
+
+</mj-attributes>
+-->
