@@ -1,210 +1,149 @@
-# Email Project Template
+# Email Design Framework
 
-This repository provides a robust and standardized template for building HTML email signatures and other responsive email assets using the MJML framework, integrated with VS Code and Git best practices.
+[![MJML](https://img.shields.io/badge/Built%20with-MJML-orange.svg)](https://mjml.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/refine-digital/email-design-framework/pulls)
 
-## Project Structure Overview
+A professional framework for building responsive, on-brand HTML emails with MJML and Automatic CSS. This repository provides a highly modular, reusable, and configurable system for developers.
+
+## Table of Contents
+
+* [Project Goal](#project-goal)
+* [The Framework Ecosystem](#the-framework-ecosystem)
+* [Features](#features)
+* [Getting Started](#getting-started)
+* [Project Structure](#project-structure)
+* [How to Use](#how-to-use)
+* [Automation](#automation)
+* [Security Notice](#security-notice)
+* [Contributing](#contributing)
+* [License](#license)
+
+## Project Goal
+
+The goal is to create world-class HTML email templates that perfectly match a website's brand identity by translating styles from the Automatic CSS (ACSS) framework into the MJML email framework.
+
+## The Framework Ecosystem
+
+This repository is the core of a larger system. The full ecosystem consists of three distinct projects:
+
+1.  **Email Design Framework (This Repo)**: The core library containing all default templates, patterns, layouts, and elements. It is intended to be consumed as a dependency (NPM package).
+2.  **Client Email Design Framework**: A project template for creating a client-specific version of the framework, allowing for deep customization and style importation.
+3.  **Email Boilerplate**: A minimal starter project for building a single, specific email (e.g., a newsletter, a transactional email) using either the core or a client-specific framework.
+
+## Features
+
+* **MJML-Based**: Utilizes the powerful MJML framework for generating responsive HTML that works in top email clients.
+* **Modular Architecture**: A five-tier structure (`emails`, `designs`, `patterns`, `layouts`, `elements`) makes templates easy to build, customize, and maintain.
+* **ACSS Integration**: Includes a Node.js script to automatically import CSS variables and classes from an `automatic.css` file, ensuring brand consistency.
+* **Dynamic Content with Tokens**: Supports a simple token system (`{{your.token.here}}`) for easy integration with any email delivery platform.
+* **Professional DevOps**: Pre-configured VS Code environment for streamlined development, formatting, and linting.
+* **Customizable**: Designed to be extended with client-specific styles and components.
+
+## Getting Started
+
+Follow these instructions to set up the development environment.
+
+### Prerequisites
+
+1.  **VS Code**: The required editor for this project.
+2.  **Node.js & NPM**: Required for dependency management and running scripts.
+3.  **Git**: For version control.
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/refine-digital/email-design-framework.git
+    cd email-design-framework
+    ```
+
+2.  **Install VS Code Extensions:**
+    When you open the project in VS Code, you will be prompted to install the recommended extensions listed in `.vscode/extensions.json`. Click **Install All** to proceed.
+
+3.  **Install NPM Dependencies:**
+    ```bash
+    npm install
+    ```
+
+## Project Structure
+
+The framework uses a logical, cascading structure within the `src/` directory.
+
 ```
-email-design-framework (root folder)
-├── .git/
-├── .vscode/
-│   ├── extensions.json
-│   └── settings.json
-├── node_modules/
-│   ├── mjml... (all modules)
-│   ├── postcss
-│   ├── postcss-safe-parser
-│   └── others...
-├── scripts/
-│   └── import-style-from-acss.js
-├── src/
-│   ├── 1_emails/
-│   │   ├── 1_default/
-│   │   │   ├── default.mjml
-│   │   │   ├── elements.mjml
-│   │   │   └── patterns.mjml
-│   │   ├── 2_newsletters/
-│   │   │   ├── newsletter-1.mjml
-│   │   │   ├── newsletter-2.mjml
-│   │   │   └── newsletter-{n}.mjml
-│   │   ├── 3_notifications/
-│   │   │   ├── notifications-1.mjml
-│   │   │   ├── notifications-2.mjml
-│   │   │   └── notifications-{n}.mjml
-│   │   ├── 4_confirmations/
-│   │   │   ├── confirmation-1.mjml
-│   │   │   ├── confirmation-2.mjml
-│   │   │   └── confirmation-{n}.mjml
-│   │   ├── 5_alerts/
-│   │   │   ├── alert-1.mjml
-│   │   │   ├── alert-2.mjml
-│   │   │   └── alert-{n}.mjml
-│   │   ├── 6_warnings/
-│   │   │   ├── warning-1.mjml
-│   │   │   ├── warning-2.mjml
-│   │   │   └── warning-{n}.mjml
-│   │   ├── 7_signatures/
-│   │   │   ├── signature-1.mjml
-│   │   │   ├── signature-2.mjml
-│   │   │   └── signature-{n}.mjml
-│   │   ├── 8_reserved/
-│   │   ├── 9_reserved/
-│   │   ├── 10_reserved/
-│   │   ├── 11_reserved/
-│   │   ├── 12_reserved/
-│   │   ├── 13_reserved/
-│   │   ├── 14_reserved/
-│   │   ├── 15_reserved/
-│   │   ├── 16_reserved/
-│   │   ├── 17_reserved/
-│   │   ├── 18_reserved/
-│   │   └── 19_reserved/
-│   ├── 2_designs/
-│   │   ├── 1_top/
-│   │   │   ├── _top-1.mjml
-│   │   │   ├── _top-2.mjml
-│   │   │   └── _top-{n}.mjml
-│   │   ├── 2_header/
-│   │   │   ├── _header-1.mjml
-│   │   │   ├── _header-2.mjml
-│   │   │   └── _header-{n}.mjml
-│   │   ├── 3_body/
-│   │   │   ├── _body-1.mjml
-│   │   │   ├── _body-2.mjml
-│   │   │   └── _body-{n}.mjml
-│   │   ├── 4_footer/
-│   │   │   ├── _footer-1.mjml
-│   │   │   ├── _footer-2.mjml
-│   │   │   └── _footer-{n}.mjml
-│   │   ├── 5_bottom/
-│   │   │   ├── _bottom-1.mjml
-│   │   │   ├── _bottom-2.mjml
-│   │   │   └── _bottom-{n}.mjml
-│   │   ├──acss/
-│   │   │   ├── automatic.css
-│   │   │   ├── framework.json
-│   │   │   └── style.json
-│   │   ├── _attributes.mjml
-│   │   ├── _classes.mjml
-│   │   ├── style-custom.mjml
-│   │   └── style.mjml
-│   ├── 3_patterns/
-│   │   ├── 1_primary/
-│   │   │   ├── primary-1.mjml
-│   │   │   ├── primary-2.mjml
-│   │   │   └── primary-{n}.mjml
-│   │   ├── 2_secondary/
-│   │   │   ├── secondary-1.mjml
-│   │   │   ├── secondary-2.mjml
-│   │   │   └── secondary-{n}.mjml
-│   │   ├── 3_information/
-│   │   │   ├── information-1.mjml
-│   │   │   ├── information-2.mjml
-│   │   │   └── information-{n}.mjml
-│   │   ├── 4_success/
-│   │   │   ├── success-1.mjml
-│   │   │   ├── success-2.mjml
-│   │   │   └── success-{n}.mjml
-│   │   ├── 5_warning/
-│   │   │   ├── warning-1.mjml
-│   │   │   ├── warning-2.mjml
-│   │   │   └── warning-{n}.mjml
-│   │   ├── 6_danger/
-│   │   │   ├── danger-1.mjml
-│   │   │   ├── danger-2.mjml
-│   │   │   └── danger-{n}.mjml
-│   │   ├── 7_reserved/
-│   │   ├── 8_reserved/
-│   │   └── 9_reserved/
-│   ├── 4_layouts/
-│   │   ├── 1_wrappers/
-│   │   │   ├── wrapper-1.mjml
-│   │   │   ├── wrapper-2.mjml
-│   │   │   └── wrapper-{n}.mjml
-│   │   ├── 2_sections/
-│   │   │   ├── section-1.mjml
-│   │   │   ├── section-2.mjml
-│   │   │   └── section-{n}.mjml
-│   │   ├── 3_groups/
-│   │   │   ├── group-1.mjml
-│   │   │   ├── group-2.mjml
-│   │   │   └── group-{n}.mjml
-│   │   ├── 4_columns/
-│   │   │   ├── column-1.mjml
-│   │   │   ├── column-2.mjml
-│   │   │   └── column-{n}.mjml
-│   │   └── 5_spacers/
-│   │       ├── spacer-1.mjml
-│   │       ├── spacer-2.mjml
-│   │       └── spacer-{n}.mjml
-│   ├── 5_elements/
-│   │   ├── 1_headings/
-│   │   │   ├── _heading-1.mjml
-│   │   │   ├── _heading-2.mjml
-│   │   │   └── _heading-{n}.mjml
-│   │   ├── 2_paragraphs/
-│   │   │   ├── _paragraph-1.mjml
-│   │   │   ├── _paragraph-2.mjml
-│   │   │   └── _paragraph-{n}.mjml
-│   │   ├── 3_images/
-│   │   │   ├── _image-1.mjml
-│   │   │   ├── _image-2.mjml
-│   │   │   └── _image-{n}.mjml
-│   │   ├── 4_links/
-│   │   │   ├── _link-1.mjml
-│   │   │   ├── _link-2.mjml
-│   │   │   └── _link-{n}.mjml
-│   │   ├── 5_buttons/
-│   │   │   ├── _button-1.mjml
-│   │   │   ├── _button-2.mjml
-│   │   │   └── _button-{n}.mjml
-│   │   ├── 6_dividers/
-│   │   │   ├── _divider-1.mjml
-│   │   │   ├── _divider-2.mjml
-│   │   │   └── _divider-{n}.mjml
-│   │   ├── 7_tables/
-│   │   │   ├── _table-1.mjml
-│   │   │   ├── _table-2.mjml
-│   │   │   └── _table-{n}.mjml
-│   │   ├── 8_reserved/
-│   │   ├── 9_reserved/
-│   │   ├── 10_heroes/
-│   │   │   ├── _hero-1.mjml
-│   │   │   ├── _hero-2.mjml
-│   │   │   └── _hero-{n}.mjml
-│   │   ├── 11_accordions/
-│   │   │   ├── _accordion-1.mjml
-│   │   │   ├── _accordion-2.mjml
-│   │   │   └── _accordion-{n}.mjml
-│   │   ├── 12_carousels/
-│   │   │   ├── _carousel-1.mjml
-│   │   │   ├── _carousel-2.mjml
-│   │   │   └── _carousel-{n}.mjml
-│   │   ├── 13_navbars/
-│   │   │   ├── _navbar-1.mjml
-│   │   │   ├── _navbar-2.mjml
-│   │   │   └── _navbar-{n}.mjml
-│   │   ├── 14_socials/
-│   │   │   ├── _social-1.mjml
-│   │   │   ├── _social-2.mjml
-│   │   │   └── _social-{n}.mjml
-│   │   ├── 15_reserved/
-│   │   ├── 16_reserved/
-│   │   ├── 17_reserved/
-│   │   ├── 18_reserved/
-│   │   ├── 19_reserved/
-│   │   ├── elements-1.mjml
-│   │   ├── elements-2.mjml
-│   │   └── elements-3.mjml
-├── .env
-├── .gitignore
-├── package.json
-└── README.md
+/src
+├── 1_emails/       # Complete, ready-to-use email themes (e.g., newsletters)
+├── 2_designs/      # Reusable email parts (e.g., header, footer, body)
+├── 3_patterns/     # UI components combining layouts & elements (e.g., confirmation boxes)
+├── 4_layouts/      # Structural components (e.g., sections, columns)
+└── 5_elements/     # Basic MJML components (e.g., styled text, buttons)
 ```
 
-## Known Security Vulnerabilities
+* **`1_emails`**: These are the final, composable email templates. Each file represents a complete email theme (e.g., a newsletter, a signature) and is built by including various parts from the `2_designs` directory.
+* **`2_designs`**: Contains the main structural parts of an email (`top`, `header`, `body`, `footer`, `bottom`). This directory also holds the master styling files (`style.mjml`, `_classes.mjml`, `_attributes.mjml`) and the ACSS import-related files.
+* **`3_patterns`**: Reusable UI/UX patterns built from layouts and elements. These are context-aware components like "primary call-to-action," "warning message," or "information box."
+* **`4_layouts`**: The foundational structural MJML tags that define the grid and spacing of the email, such as wrappers, sections, columns, and groups.
+* **`5_elements`**: The lowest-level components, representing styled, individual MJML elements like `<mj-text>`, `<mj-button>`, or `<mj-image>`.
 
-Please be aware that this template, while using the stable MJML v4, currently inherits some **high-severity security vulnerabilities** from its transitive dependencies, specifically `html-minifier` (CVE-2022-44675, a Regular Expression Denial of Service - REDoS vulnerability) and `mjml-migrate`.
+## How to Use
 
-These issues cannot be automatically resolved by `npm audit fix` while staying on the MJML v4 branch, as the patched versions of the affected sub-dependencies (like `html-minifier@^5.0.1`) are not compatible or available for automatic upgrade within MJML v4's dependency tree on npm.
+### Previewing Emails
 
-The long-term solution is an upgrade to a stable MJML v5 or newer when it becomes available and fully addresses these transitive dependencies. Users should evaluate the risk for their specific use case. For local development and static email compilation, the direct threat surface of these vulnerabilities is generally low.
+1.  Open any `.mjml` file from the `src/1_emails/` directory.
+2.  Open the VS Code Command Palette (`Cmd+Shift+P`).
+3.  Run the command **MJML: Open Preview to the Side**.
+
+The preview will automatically update as you edit and save the main file or any of its included partials.
+
+### Creating a New Email
+
+1.  Create a new file, e.g., `src/1_emails/2_newsletters/my-new-newsletter.mjml`.
+2.  Build your email by including the necessary design parts:
+
+    ```mjml
+    <mjml>
+      <mj-head>
+        <!-- Include shared head content, styles, and attributes -->
+        <mj-include path="../2_designs/style.mjml" />
+      </mj-head>
+      <mj-body>
+        <!-- Include design parts to compose the email -->
+        <mj-include path="../2_designs/2_header/_header-1.mjml" />
+        <mj-include path="../2_designs/3_body/_body-1.mjml" />
+        <mj-include path="../2_designs/4_footer/_footer-1.mjml" />
+      </mj-body>
+    </mjml>
+    ```
+
+## Automation
+
+For client projects, you can automatically generate `style.mjml` from an `automatic.css` file.
+
+1.  Place your client's `automatic.css` file in `/src/2_designs/acss/`.
+2.  Configure `/src/2_designs/acss/style.json` to specify which CSS categories to import.
+3.  Run the import script from the root directory:
+    ```bash
+    node ./scripts/import-style-from-acss.js
+    ```
+This will generate a new `style.mjml` file in `/src/2_designs/` with all the corresponding MJML classes.
+
+## Security Notice
+
+This template uses **MJML v4**, which has known high-severity vulnerabilities in its transitive dependencies (`html-minifier` and `mjml-migrate`). These issues cannot be resolved with `npm audit fix` in this version.
+
+The long-term solution is an upgrade to MJML v5 or newer once stable. For local development and static email compilation, the direct threat of these vulnerabilities is generally low, but users should evaluate the risk for their own use case.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1.  Fork the repository.
+2.  Create a new branch (`git checkout -b feature/your-feature-name`).
+3.  Make your changes. Ensure your code adheres to the formatting rules (2-space tabs).
+4.  Commit your changes (`git commit -m 'Add some feature'`).
+5.  Push to the branch (`git push origin feature/your-feature-name`).
+6.  Open a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
