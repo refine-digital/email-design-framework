@@ -4,70 +4,202 @@ This repository provides a robust and standardized template for building HTML em
 
 ## Project Structure Overview
 ```
-src/
-├── components/
-│   ├── body/
-│   │   ├── _accordion.mjml
-│   │   ├── _body.mjml
-│   │   ├── _button.mjml
-│   │   ├── _carousel.mjml
-│   │   ├── _column.mjml
-│   │   ├── _divider.mjml
-│   │   ├── _group.mjml
-│   │   ├── _hero.mjml
-│   │   ├── _image.mjml
-│   │   ├── _navbar.mjml
-│   │   ├── _raw.mjml
-│   │   ├── _section.mjml
-│   │   ├── _social.mjml
-│   │   ├── _spacer.mjml
-│   │   ├── _table.mjml
-│   │   ├── _text.mjml
-│   │   └── _wrapper.mjml
-│   ├── footer/
-│   │   └── _footer.mjml
-│   ├── header/
-│   │   └── _header.mjml
-│   └── pre/
-│       └── _pre.mjml
-├── design/
-│   ├── _head.mjml
-│   ├── style.css
-│   └── style.json
-├── images/
-│   └── external.json
-└── index.mjml
+email-design-framework (root folder)
+├── .git/
+├── .vscode/
+│   ├── extensions.json
+│   └── settings.json
+├── node_modules/
+│   ├── mjml... (all modules)
+│   ├── postcss
+│   ├── postcss-safe-parser
+│   └── others...
+├── scripts/
+│   └── import-style-from-acss.js
+├── src/
+│   ├── 1_emails/
+│   │   ├── 1_default/
+│   │   │   ├── default.mjml
+│   │   │   ├── elements.mjml
+│   │   │   └── patterns.mjml
+│   │   ├── 2_newsletters/
+│   │   │   ├── newsletter-1.mjml
+│   │   │   ├── newsletter-2.mjml
+│   │   │   └── newsletter-{n}.mjml
+│   │   ├── 3_notifications/
+│   │   │   ├── notifications-1.mjml
+│   │   │   ├── notifications-2.mjml
+│   │   │   └── notifications-{n}.mjml
+│   │   ├── 4_confirmations/
+│   │   │   ├── confirmation-1.mjml
+│   │   │   ├── confirmation-2.mjml
+│   │   │   └── confirmation-{n}.mjml
+│   │   ├── 5_alerts/
+│   │   │   ├── alert-1.mjml
+│   │   │   ├── alert-2.mjml
+│   │   │   └── alert-{n}.mjml
+│   │   ├── 6_warnings/
+│   │   │   ├── warning-1.mjml
+│   │   │   ├── warning-2.mjml
+│   │   │   └── warning-{n}.mjml
+│   │   ├── 7_signatures/
+│   │   │   ├── signature-1.mjml
+│   │   │   ├── signature-2.mjml
+│   │   │   └── signature-{n}.mjml
+│   │   ├── 8_reserved/
+│   │   ├── 9_reserved/
+│   │   ├── 10_reserved/
+│   │   ├── 11_reserved/
+│   │   ├── 12_reserved/
+│   │   ├── 13_reserved/
+│   │   ├── 14_reserved/
+│   │   ├── 15_reserved/
+│   │   ├── 16_reserved/
+│   │   ├── 17_reserved/
+│   │   ├── 18_reserved/
+│   │   └── 19_reserved/
+│   ├── 2_designs/
+│   │   ├── 1_top/
+│   │   │   ├── _top-1.mjml
+│   │   │   ├── _top-2.mjml
+│   │   │   └── _top-{n}.mjml
+│   │   ├── 2_header/
+│   │   │   ├── _header-1.mjml
+│   │   │   ├── _header-2.mjml
+│   │   │   └── _header-{n}.mjml
+│   │   ├── 3_body/
+│   │   │   ├── _body-1.mjml
+│   │   │   ├── _body-2.mjml
+│   │   │   └── _body-{n}.mjml
+│   │   ├── 4_footer/
+│   │   │   ├── _footer-1.mjml
+│   │   │   ├── _footer-2.mjml
+│   │   │   └── _footer-{n}.mjml
+│   │   ├── 5_bottom/
+│   │   │   ├── _bottom-1.mjml
+│   │   │   ├── _bottom-2.mjml
+│   │   │   └── _bottom-{n}.mjml
+│   │   ├──acss/
+│   │   │   ├── automatic.css
+│   │   │   ├── framework.json
+│   │   │   └── style.json
+│   │   ├── _attributes.mjml
+│   │   ├── _classes.mjml
+│   │   ├── style-custom.mjml
+│   │   └── style.mjml
+│   ├── 3_patterns/
+│   │   ├── 1_primary/
+│   │   │   ├── primary-1.mjml
+│   │   │   ├── primary-2.mjml
+│   │   │   └── primary-{n}.mjml
+│   │   ├── 2_secondary/
+│   │   │   ├── secondary-1.mjml
+│   │   │   ├── secondary-2.mjml
+│   │   │   └── secondary-{n}.mjml
+│   │   ├── 3_information/
+│   │   │   ├── information-1.mjml
+│   │   │   ├── information-2.mjml
+│   │   │   └── information-{n}.mjml
+│   │   ├── 4_success/
+│   │   │   ├── success-1.mjml
+│   │   │   ├── success-2.mjml
+│   │   │   └── success-{n}.mjml
+│   │   ├── 5_warning/
+│   │   │   ├── warning-1.mjml
+│   │   │   ├── warning-2.mjml
+│   │   │   └── warning-{n}.mjml
+│   │   ├── 6_danger/
+│   │   │   ├── danger-1.mjml
+│   │   │   ├── danger-2.mjml
+│   │   │   └── danger-{n}.mjml
+│   │   ├── 7_reserved/
+│   │   ├── 8_reserved/
+│   │   └── 9_reserved/
+│   ├── 4_layouts/
+│   │   ├── 1_wrappers/
+│   │   │   ├── wrapper-1.mjml
+│   │   │   ├── wrapper-2.mjml
+│   │   │   └── wrapper-{n}.mjml
+│   │   ├── 2_sections/
+│   │   │   ├── section-1.mjml
+│   │   │   ├── section-2.mjml
+│   │   │   └── section-{n}.mjml
+│   │   ├── 3_groups/
+│   │   │   ├── group-1.mjml
+│   │   │   ├── group-2.mjml
+│   │   │   └── group-{n}.mjml
+│   │   ├── 4_columns/
+│   │   │   ├── column-1.mjml
+│   │   │   ├── column-2.mjml
+│   │   │   └── column-{n}.mjml
+│   │   └── 5_spacers/
+│   │       ├── spacer-1.mjml
+│   │       ├── spacer-2.mjml
+│   │       └── spacer-{n}.mjml
+│   ├── 5_elements/
+│   │   ├── 1_headings/
+│   │   │   ├── _heading-1.mjml
+│   │   │   ├── _heading-2.mjml
+│   │   │   └── _heading-{n}.mjml
+│   │   ├── 2_paragraphs/
+│   │   │   ├── _paragraph-1.mjml
+│   │   │   ├── _paragraph-2.mjml
+│   │   │   └── _paragraph-{n}.mjml
+│   │   ├── 3_images/
+│   │   │   ├── _image-1.mjml
+│   │   │   ├── _image-2.mjml
+│   │   │   └── _image-{n}.mjml
+│   │   ├── 4_links/
+│   │   │   ├── _link-1.mjml
+│   │   │   ├── _link-2.mjml
+│   │   │   └── _link-{n}.mjml
+│   │   ├── 5_buttons/
+│   │   │   ├── _button-1.mjml
+│   │   │   ├── _button-2.mjml
+│   │   │   └── _button-{n}.mjml
+│   │   ├── 6_dividers/
+│   │   │   ├── _divider-1.mjml
+│   │   │   ├── _divider-2.mjml
+│   │   │   └── _divider-{n}.mjml
+│   │   ├── 7_tables/
+│   │   │   ├── _table-1.mjml
+│   │   │   ├── _table-2.mjml
+│   │   │   └── _table-{n}.mjml
+│   │   ├── 8_reserved/
+│   │   ├── 9_reserved/
+│   │   ├── 10_heroes/
+│   │   │   ├── _hero-1.mjml
+│   │   │   ├── _hero-2.mjml
+│   │   │   └── _hero-{n}.mjml
+│   │   ├── 11_accordions/
+│   │   │   ├── _accordion-1.mjml
+│   │   │   ├── _accordion-2.mjml
+│   │   │   └── _accordion-{n}.mjml
+│   │   ├── 12_carousels/
+│   │   │   ├── _carousel-1.mjml
+│   │   │   ├── _carousel-2.mjml
+│   │   │   └── _carousel-{n}.mjml
+│   │   ├── 13_navbars/
+│   │   │   ├── _navbar-1.mjml
+│   │   │   ├── _navbar-2.mjml
+│   │   │   └── _navbar-{n}.mjml
+│   │   ├── 14_socials/
+│   │   │   ├── _social-1.mjml
+│   │   │   ├── _social-2.mjml
+│   │   │   └── _social-{n}.mjml
+│   │   ├── 15_reserved/
+│   │   ├── 16_reserved/
+│   │   ├── 17_reserved/
+│   │   ├── 18_reserved/
+│   │   ├── 19_reserved/
+│   │   ├── elements-1.mjml
+│   │   ├── elements-2.mjml
+│   │   └── elements-3.mjml
+├── .env
+├── .gitignore
+├── package.json
+└── README.md
 ```
-
-### `src/` Directory Breakdown:
-
-* **`src/index.mjml`**:
-    This is the **main entry point** for compiling your email template. It orchestrates the entire email structure by including various components and design elements from other subdirectories. This is the file you would typically pass to the MJML compiler.
-
-* **`src/components/`**:
-    This directory houses all the **reusable MJML partials** that form the building blocks of your email. Each subdirectory within `components/` groups related MJML elements into distinct, manageable modules.
-
-    * **`body/`**: Contains core body components. While many individual MJML tags are listed (e.g., `_accordion.mjml`, `_button.mjml`), these are intended as pre-styled or pre-configured reusable versions of the native MJML tags. `_body.mjml` would serve as a wrapper or default structure for the main content area of the email, and `_signature.mjml` (if present) would hold your primary signature content.
-
-    * **`footer/`**: Contains the MJML for the email's footer section (e.g., disclaimers, company address, unsubscribe links).
-
-    * **`header/`**: Contains the MJML for the email's header section (e.g., logo, main heading, navigation).
-
-    * **`pre/`**: Contains the MJML for the pre-header text, which is typically a short summary visible in the email client's inbox list.
-
-* **`src/design/`**:
-    This directory holds **global design elements and styling configurations** that apply across your entire email template.
-
-    * **`_head.mjml`**: This crucial file consolidates all elements that belong within the HTML `<head>` section of your compiled email. This includes global `<mj-attributes>` for default component styling, `<mj-breakpoint>` for responsive behavior, `<mj-font>` declarations, and global CSS rules defined within `<mj-style>` tags (often imported from `style.css`).
-
-    * **`style.css`**: Intended for storing global CSS rules that can be included or inlined into your email's `<mj-style>` tag within `_head.mjml`. This promotes centralized styling.
-
-    * **`style.json`**: This file is designated for defining **design tokens** (e.g., colors, font sizes, spacing values, brand-specific variables) in a structured JSON format. While MJML doesn't natively consume JSON for styling, this serves as a clear, centralized reference for your design system and can be integrated into build processes with additional tooling.
-
-* **`src/images/`**:
-    This directory is dedicated to **static image assets** used within your email template.
-
-    * **`external.json`**: This file is designed to hold references or tokens for images that are hosted externally (e.g., on a CDN). This is particularly useful for email development, where images often need to be referenced by their absolute URLs.
 
 ## Known Security Vulnerabilities
 
